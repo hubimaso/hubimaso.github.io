@@ -1,5 +1,4 @@
-..  SPDX-License-Identifier: BSD-3-Clause
-    Copyright(c) 2010-2014 Intel Corporation.
+.. 2018-11-28 
 
 Linux高性能C/C++平台库及框架
 ========================================================
