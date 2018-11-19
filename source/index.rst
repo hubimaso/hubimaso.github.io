@@ -1,4 +1,7 @@
-.. Linux高性能C/C++平台库及框架
+..  SPDX-License-Identifier: BSD-3-Clause
+    Copyright(c) 2010-2014 Intel Corporation.
+
+Linux高性能C/C++平台库及框架
 ========================================================
 
 .. toctree::
