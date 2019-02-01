@@ -1,0 +1,491 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.14"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>thread_mng.h 文件参考</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+  $(document).ready(initResizable);
+/* @license-end */</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="NAPLIB.PNG"/></td>
+    <td style="padding-left: 0.5em;">
+    <div id="projectbrief">网络分析平台库</div>
+    </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.8.14 -->
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',false,false,'search.php','搜索');
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(document).ready(function(){initNavTree('thread__mng_8h.html','');});
+/* @license-end */
+</script>
+<div id="doc-content">
+<div class="header">
+  <div class="summary">
+<a href="#nested-classes">结构体</a> &#124;
+<a href="#typedef-members">类型定义</a> &#124;
+<a href="#enum-members">枚举</a> &#124;
+<a href="#func-members">函数</a>  </div>
+  <div class="headertitle">
+<div class="title">thread_mng.h 文件参考</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p>线程管理组件, 包括基于dpdk eal线程接口  
+<a href="#details">更多...</a></p>
+
+<p><a href="thread__mng_8h_source.html">浏览源代码.</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
+结构体</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structTHREADPOOL__INPUT.html">THREADPOOL_INPUT</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
+类型定义</h2></td></tr>
+<tr class="memitem:a43f0c2a69db911ffafb4599de0f56d09"><td class="memItemLeft" align="right" valign="top">typedef int32_t(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="thread__mng_8h.html#a43f0c2a69db911ffafb4599de0f56d09">THREADPOOL_TASK_HANDLER_CB</a>) (void **task_data, int32_t data_num)</td></tr>
+<tr class="separator:a43f0c2a69db911ffafb4599de0f56d09"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a460479ba3a32df98a516903fb51e77ee"><td class="memItemLeft" align="right" valign="top">typedef int32_t(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="thread__mng_8h.html#a460479ba3a32df98a516903fb51e77ee">THREADPOOL_DATA_FREE_CB</a>) (void **task_data, int32_t data_num)</td></tr>
+<tr class="separator:a460479ba3a32df98a516903fb51e77ee"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a56b6d0a16a63a53ff95a03082aaac644"><td class="memItemLeft" align="right" valign="top">typedef int32_t(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="thread__mng_8h.html#a56b6d0a16a63a53ff95a03082aaac644">THREADPOOL_DATA_FILL_CB</a>) (void **task_data, int32_t data_num)</td></tr>
+<tr class="separator:a56b6d0a16a63a53ff95a03082aaac644"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="enum-members"></a>
+枚举</h2></td></tr>
+<tr class="memitem:aa452790d9955b65f58f5e0db95596b2b"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="thread__mng_8h.html#aa452790d9955b65f58f5e0db95596b2b">PTHREAD_TYPE</a> { <a class="el" href="thread__mng_8h.html#aa452790d9955b65f58f5e0db95596b2ba608059ef0d22a7f986e50edf259f983b">PTHREAD_LPRI</a> = 0, 
+<a class="el" href="thread__mng_8h.html#aa452790d9955b65f58f5e0db95596b2ba06cf91170bdb88fad59e6a982ba5f348">PTHREAD_HPRI</a>
+ }</td></tr>
+<tr class="separator:aa452790d9955b65f58f5e0db95596b2b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adb7af47d4175f9d17e909628355b9314"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="thread__mng_8h.html#adb7af47d4175f9d17e909628355b9314">DTHREAD_TYPE</a> { <a class="el" href="thread__mng_8h.html#adb7af47d4175f9d17e909628355b9314aefbfc67c9f6fbfd24e1c9746e6373e4a">DTHREAD_SHARE_SET</a> = 1, 
+<a class="el" href="thread__mng_8h.html#adb7af47d4175f9d17e909628355b9314a0dcc5c98415829fc717f8127412ebc62">DTHREAD_PHY_SET</a>, 
+<a class="el" href="thread__mng_8h.html#adb7af47d4175f9d17e909628355b9314a54fcb5fde23bb9a2f126909e4636d84f">DTHREAD_LOGIC_SET</a>
+ }</td></tr>
+<tr class="separator:adb7af47d4175f9d17e909628355b9314"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+函数</h2></td></tr>
+<tr class="memitem:aa50dd71b969d3835210e54e6ca8521cf"><td class="memItemLeft" align="right" valign="top">int32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="thread__mng_8h.html#aa50dd71b969d3835210e54e6ca8521cf">dpdk_thread_create</a> (int(*f)(void *), void *arg, unsigned cpu_id, const char *thread_name, <a class="el" href="thread__mng_8h.html#adb7af47d4175f9d17e909628355b9314">DTHREAD_TYPE</a> thread_type)</td></tr>
+<tr class="separator:aa50dd71b969d3835210e54e6ca8521cf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aceca67f0fa2c220374171dcd2520799c"><td class="memItemLeft" align="right" valign="top">int32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="thread__mng_8h.html#aceca67f0fa2c220374171dcd2520799c">posix_thread_create</a> (int(*f)(void *), void *arg, unsigned cpu_id, const char *thread_name, <a class="el" href="thread__mng_8h.html#aa452790d9955b65f58f5e0db95596b2b">PTHREAD_TYPE</a> thread_type)</td></tr>
+<tr class="separator:aceca67f0fa2c220374171dcd2520799c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2006ece27562195640fd2748fcebc1d5"><td class="memItemLeft" align="right" valign="top">void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="thread__mng_8h.html#a2006ece27562195640fd2748fcebc1d5">dpdk_threadpool_create</a> (<a class="el" href="structTHREADPOOL__INPUT.html">THREADPOOL_INPUT</a> *threadpool_input)</td></tr>
+<tr class="separator:a2006ece27562195640fd2748fcebc1d5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1cb790b4e483e4ad850061a8d4f4a919"><td class="memItemLeft" align="right" valign="top">int32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="thread__mng_8h.html#a1cb790b4e483e4ad850061a8d4f4a919">dpdk_threadpool_task_muti_add</a> (void *threadpool, void **task_data, int32_t data_num, int32_t thread_id, <a class="el" href="thread__mng_8h.html#a43f0c2a69db911ffafb4599de0f56d09">THREADPOOL_TASK_HANDLER_CB</a> task_handler_cb)</td></tr>
+<tr class="separator:a1cb790b4e483e4ad850061a8d4f4a919"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab712e191fb018690d35274fdfa2e4f1c"><td class="memItemLeft" align="right" valign="top">int32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="thread__mng_8h.html#ab712e191fb018690d35274fdfa2e4f1c">dpdk_threadpool_task_single_add</a> (void *threadpool, void *task_data, <a class="el" href="thread__mng_8h.html#a43f0c2a69db911ffafb4599de0f56d09">THREADPOOL_TASK_HANDLER_CB</a> task_handler_cb)</td></tr>
+<tr class="separator:ab712e191fb018690d35274fdfa2e4f1c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">详细描述</h2>
+<div class="textblock"><p>线程管理组件, 包括基于dpdk eal线程接口 </p>
+<dl class="section author"><dt>作者</dt><dd>hubimaso </dd></dl>
+<dl class="section version"><dt>版本</dt><dd>v1.0.0 </dd></dl>
+<dl class="section date"><dt>日期</dt><dd>2018-12-7 </dd></dl>
+<dl class="section note"><dt>注解</dt><dd>功能：线程(池)创建/销毁等 </dd></dl>
+<dl class="section since"><dt>自从</dt><dd>版本v1.0.0 提供的管理接口 </dd></dl>
+
+<p class="definition">在文件 <a class="el" href="thread__mng_8h_source.html">thread_mng.h</a> 中定义.</p>
+</div><h2 class="groupheader">类型定义说明</h2>
+<a id="a43f0c2a69db911ffafb4599de0f56d09"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a43f0c2a69db911ffafb4599de0f56d09">&#9670;&nbsp;</a></span>THREADPOOL_TASK_HANDLER_CB</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef int32_t(* THREADPOOL_TASK_HANDLER_CB) (void **task_data, int32_t data_num)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>分配任务节点回调函数, 平台仅仅分配任务节点，数据内存节点由使用者维护任务处理回调函数 </p>
+
+<p class="definition">在文件 <a class="el" href="thread__mng_8h_source.html">thread_mng.h</a> 第 <a class="el" href="thread__mng_8h_source.html#l00066">66</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a460479ba3a32df98a516903fb51e77ee"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a460479ba3a32df98a516903fb51e77ee">&#9670;&nbsp;</a></span>THREADPOOL_DATA_FREE_CB</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef int32_t(* THREADPOOL_DATA_FREE_CB) (void **task_data, int32_t data_num)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>如果data_free为NULL，平台释放data数据， 否则data_free由使用者释放数据 </p>
+
+<p class="definition">在文件 <a class="el" href="thread__mng_8h_source.html">thread_mng.h</a> 第 <a class="el" href="thread__mng_8h_source.html#l00067">67</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a56b6d0a16a63a53ff95a03082aaac644"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a56b6d0a16a63a53ff95a03082aaac644">&#9670;&nbsp;</a></span>THREADPOOL_DATA_FILL_CB</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef int32_t(* THREADPOOL_DATA_FILL_CB) (void **task_data, int32_t data_num)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>分配任务节点,且data内存由平台分配回调函数, 填充data回调函数直接写task_data内存 </p>
+
+<p class="definition">在文件 <a class="el" href="thread__mng_8h_source.html">thread_mng.h</a> 第 <a class="el" href="thread__mng_8h_source.html#l00072">72</a> 行定义.</p>
+
+</div>
+</div>
+<h2 class="groupheader">枚举类型说明</h2>
+<a id="aa452790d9955b65f58f5e0db95596b2b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa452790d9955b65f58f5e0db95596b2b">&#9670;&nbsp;</a></span>PTHREAD_TYPE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="thread__mng_8h.html#aa452790d9955b65f58f5e0db95596b2b">PTHREAD_TYPE</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>线程优先级 </p>
+<table class="fieldtable">
+<tr><th colspan="2">枚举值</th></tr><tr><td class="fieldname"><a id="aa452790d9955b65f58f5e0db95596b2ba608059ef0d22a7f986e50edf259f983b"></a>PTHREAD_LPRI&#160;</td><td class="fielddoc"><p>POSIX 线程低优先级设置 </p>
+</td></tr>
+<tr><td class="fieldname"><a id="aa452790d9955b65f58f5e0db95596b2ba06cf91170bdb88fad59e6a982ba5f348"></a>PTHREAD_HPRI&#160;</td><td class="fielddoc"><p>POSIX 线程高优先级设置, 必须是root用户启动进程 </p>
+</td></tr>
+</table>
+
+<p class="definition">在文件 <a class="el" href="thread__mng_8h_source.html">thread_mng.h</a> 第 <a class="el" href="thread__mng_8h_source.html#l00021">21</a> 行定义.</p>
+
+</div>
+</div>
+<a id="adb7af47d4175f9d17e909628355b9314"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adb7af47d4175f9d17e909628355b9314">&#9670;&nbsp;</a></span>DTHREAD_TYPE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="thread__mng_8h.html#adb7af47d4175f9d17e909628355b9314">DTHREAD_TYPE</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>DPDK eal线程之间不能共享核 </p>
+<table class="fieldtable">
+<tr><th colspan="2">枚举值</th></tr><tr><td class="fieldname"><a id="adb7af47d4175f9d17e909628355b9314aefbfc67c9f6fbfd24e1c9746e6373e4a"></a>DTHREAD_SHARE_SET&#160;</td><td class="fielddoc"><p>dpdk 线程可以与非dpdk线程共享 </p>
+</td></tr>
+<tr><td class="fieldname"><a id="adb7af47d4175f9d17e909628355b9314a0dcc5c98415829fc717f8127412ebc62"></a>DTHREAD_PHY_SET&#160;</td><td class="fielddoc"><p>dpdk 线程独占物理核 </p>
+</td></tr>
+<tr><td class="fieldname"><a id="adb7af47d4175f9d17e909628355b9314a54fcb5fde23bb9a2f126909e4636d84f"></a>DTHREAD_LOGIC_SET&#160;</td><td class="fielddoc"><p>dpdk 线程独占逻辑核 </p>
+</td></tr>
+</table>
+
+<p class="definition">在文件 <a class="el" href="thread__mng_8h_source.html">thread_mng.h</a> 第 <a class="el" href="thread__mng_8h_source.html#l00030">30</a> 行定义.</p>
+
+</div>
+</div>
+<h2 class="groupheader">函数说明</h2>
+<a id="aa50dd71b969d3835210e54e6ca8521cf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa50dd71b969d3835210e54e6ca8521cf">&#9670;&nbsp;</a></span>dpdk_thread_create()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int32_t dpdk_thread_create </td>
+          <td>(</td>
+          <td class="paramtype">int(*)(void *)&#160;</td>
+          <td class="paramname"><em>f</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>arg</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">unsigned&#160;</td>
+          <td class="paramname"><em>cpu_id</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>thread_name</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="thread__mng_8h.html#adb7af47d4175f9d17e909628355b9314">DTHREAD_TYPE</a>&#160;</td>
+          <td class="paramname"><em>thread_type</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>dpdk eal线程创建接口 </p><dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">f</td><td>函数指针，在dpdk_thread_create调用后启动 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">arg</td><td>函数指针入参 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">cpu_id</td><td>绑定的cpuid </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">thread_name</td><td>线程名称,建议不要重名 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">thread_type</td><td>线程类型，见宏定义说明 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>成功：0， 失败：-1 </dd></dl>
+<dl class="section warning"><dt>警告</dt><dd>入参不能为空 </dd></dl>
+<dl class="section note"><dt>注解</dt><dd>dpdk线程创建不能cpu_id相同 </dd></dl>
+<dl class="section see"><dt>参见</dt><dd>用法参考examples中线程管理相关例子 </dd></dl>
+
+</div>
+</div>
+<a id="aceca67f0fa2c220374171dcd2520799c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aceca67f0fa2c220374171dcd2520799c">&#9670;&nbsp;</a></span>posix_thread_create()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int32_t posix_thread_create </td>
+          <td>(</td>
+          <td class="paramtype">int(*)(void *)&#160;</td>
+          <td class="paramname"><em>f</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>arg</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">unsigned&#160;</td>
+          <td class="paramname"><em>cpu_id</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>thread_name</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="thread__mng_8h.html#aa452790d9955b65f58f5e0db95596b2b">PTHREAD_TYPE</a>&#160;</td>
+          <td class="paramname"><em>thread_type</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>posix 线程创建接口 </p><dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">f</td><td>函数指针，在posix_thread_create调用后启动 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">arg</td><td>函数指针入参 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">cpu_id</td><td>绑定的cpuid </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">thread_name</td><td>线程名称 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">thread_type</td><td>线程类型，见宏定义说明 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>成功：0， 失败：-1 </dd></dl>
+<dl class="section warning"><dt>警告</dt><dd>入参不能为空 </dd></dl>
+<dl class="section see"><dt>参见</dt><dd>用法参考examples中线程管理相关例子 </dd></dl>
+
+</div>
+</div>
+<a id="a2006ece27562195640fd2748fcebc1d5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2006ece27562195640fd2748fcebc1d5">&#9670;&nbsp;</a></span>dpdk_threadpool_create()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void* dpdk_threadpool_create </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structTHREADPOOL__INPUT.html">THREADPOOL_INPUT</a> *&#160;</td>
+          <td class="paramname"><em>threadpool_input</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>threadpool 线程池创建接口 </p><dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">threadpool_input</td><td>线程池入参 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>成功：threadpool 句柄指针；失败：NULL </dd></dl>
+<dl class="section see"><dt>参见</dt><dd>参考sample相关用例 </dd></dl>
+
+</div>
+</div>
+<a id="a1cb790b4e483e4ad850061a8d4f4a919"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1cb790b4e483e4ad850061a8d4f4a919">&#9670;&nbsp;</a></span>dpdk_threadpool_task_muti_add()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int32_t dpdk_threadpool_task_muti_add </td>
+          <td>(</td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>threadpool</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void **&#160;</td>
+          <td class="paramname"><em>task_data</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int32_t&#160;</td>
+          <td class="paramname"><em>data_num</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int32_t&#160;</td>
+          <td class="paramname"><em>thread_id</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="thread__mng_8h.html#a43f0c2a69db911ffafb4599de0f56d09">THREADPOOL_TASK_HANDLER_CB</a>&#160;</td>
+          <td class="paramname"><em>task_handler_cb</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>threadpool 任务添加到线程池 </p><dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">threadpool</td><td>线程池句柄指针 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">task_data</td><td>数据内存指针数组，内存可以由调用者维护，也可以由平台维护（task_data==NULL） </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">data_num</td><td>数据个数 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">thread_id</td><td>多线程添加任务，需要调用者填写thread_id(0~N) </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">task_handler_cb</td><td>针对不同任务处理函数，可以为NULL，在创建线程池时，统一处理 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>成功：0，失败：-1 </dd></dl>
+<dl class="section warning"><dt>警告</dt><dd>参数不能为空 </dd></dl>
+<dl class="section see"><dt>参见</dt><dd>参考sample相关用例 </dd></dl>
+
+</div>
+</div>
+<a id="ab712e191fb018690d35274fdfa2e4f1c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab712e191fb018690d35274fdfa2e4f1c">&#9670;&nbsp;</a></span>dpdk_threadpool_task_single_add()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int32_t dpdk_threadpool_task_single_add </td>
+          <td>(</td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>threadpool</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>task_data</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="thread__mng_8h.html#a43f0c2a69db911ffafb4599de0f56d09">THREADPOOL_TASK_HANDLER_CB</a>&#160;</td>
+          <td class="paramname"><em>task_handler_cb</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>threadpool 任务添加到线程池 </p><dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">threadpool</td><td>线程池句柄指针 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">task_data</td><td>数据内存指针，内存可以由调用者维护，也可以由平台维护（task_data==NULL） </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">task_handler_cb</td><td>针对不同任务处理函数，可以为NULL，在创建线程池时，统一处理 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>成功：0，失败：-1 </dd></dl>
+<dl class="section warning"><dt>警告</dt><dd>参数不能为空, 单线程add任务 </dd></dl>
+<dl class="section see"><dt>参见</dt><dd>参考sample相关用例 </dd></dl>
+
+</div>
+</div>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_f832923ad3cb060bc87ad85e68b8a1c3.html">public</a></li><li class="navelem"><a class="el" href="dir_0fb2101ba02d68f078970216a1fe0334.html">include</a></li><li class="navelem"><a class="el" href="dir_053b8ab4c6d0f736772003381ca40e09.html">libnap</a></li><li class="navelem"><a class="el" href="dir_c909c5f3a0b46e1ec56d4e9429d17787.html">libthread_mng</a></li><li class="navelem"><a class="el" href="thread__mng_8h.html">thread_mng.h</a></li>
+    <li class="footer">制作者
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.14 </li>
+  </ul>
+</div>
+</body>
+</html>

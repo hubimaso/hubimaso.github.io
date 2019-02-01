@@ -1,0 +1,286 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.14"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>probe_mng.h 文件参考</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+  $(document).ready(initResizable);
+/* @license-end */</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="NAPLIB.PNG"/></td>
+    <td style="padding-left: 0.5em;">
+    <div id="projectbrief">网络分析平台库</div>
+    </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.8.14 -->
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',false,false,'search.php','搜索');
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(document).ready(function(){initNavTree('probe__mng_8h.html','');});
+/* @license-end */
+</script>
+<div id="doc-content">
+<div class="header">
+  <div class="summary">
+<a href="#define-members">宏定义</a> &#124;
+<a href="#typedef-members">类型定义</a>  </div>
+  <div class="headertitle">
+<div class="title">probe_mng.h 文件参考</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p>函数性能探测管理接口  
+<a href="#details">更多...</a></p>
+
+<p><a href="probe__mng_8h_source.html">浏览源代码.</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
+宏定义</h2></td></tr>
+<tr class="memitem:a840353ef71d2e37e6a5c5ad953274d28"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="probe__mng_8h.html#a840353ef71d2e37e6a5c5ad953274d28">PROBE_START</a>(probe_id,  probe_name,  thread_id)</td></tr>
+<tr class="separator:a840353ef71d2e37e6a5c5ad953274d28"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a113b5aaa7fde82086abbb95dba253c30"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="probe__mng_8h.html#a113b5aaa7fde82086abbb95dba253c30">PROBE_END</a>(probe_id,  probe_name,  thread_id)</td></tr>
+<tr class="separator:a113b5aaa7fde82086abbb95dba253c30"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7b4a8db9160444cf951d13e643e6d151"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="probe__mng_8h.html#a7b4a8db9160444cf951d13e643e6d151">FUNC_PROBE_START</a>(thread_id)</td></tr>
+<tr class="separator:a7b4a8db9160444cf951d13e643e6d151"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a646e69923d1ae371f582248b3c303519"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="probe__mng_8h.html#a646e69923d1ae371f582248b3c303519">FUNC_PROBE_END</a>(thread_id)</td></tr>
+<tr class="separator:a646e69923d1ae371f582248b3c303519"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
+类型定义</h2></td></tr>
+<tr class="memitem:ad017fff1600e69a88fa6c4486f34ead7"><td class="memItemLeft" align="right" valign="top">typedef struct _ST_PROBE_NODE&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="probe__mng_8h.html#ad017fff1600e69a88fa6c4486f34ead7">PROBE_NODE</a></td></tr>
+<tr class="separator:ad017fff1600e69a88fa6c4486f34ead7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">详细描述</h2>
+<div class="textblock"><p>函数性能探测管理接口 </p>
+<dl class="section author"><dt>作者</dt><dd>hubimaso </dd></dl>
+<dl class="section version"><dt>版本</dt><dd>v1.0.0 </dd></dl>
+<dl class="section date"><dt>日期</dt><dd>2018-12-12 </dd></dl>
+<dl class="section note"><dt>注解</dt><dd>功能： </dd></dl>
+<dl class="section since"><dt>自从</dt><dd>版本v1.0.0 提供的管理接口 </dd></dl>
+
+<p class="definition">在文件 <a class="el" href="probe__mng_8h_source.html">probe_mng.h</a> 中定义.</p>
+</div><h2 class="groupheader">宏定义说明</h2>
+<a id="a840353ef71d2e37e6a5c5ad953274d28"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a840353ef71d2e37e6a5c5ad953274d28">&#9670;&nbsp;</a></span>PROBE_START</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define PROBE_START</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">probe_id, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">probe_name, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">thread_id&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>函数探测起始点 </p><dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">probe_id</td><td>在函数内部唯一(与PROBE_END的probe_id保持一致) </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">probe_name</td><td>在函数内部唯一，探测点名称(与PROBE_END保持一致) </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">thread_id</td><td>如果是单线程，thread_id转入0，多线程传入线程id(0~n) </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section warning"><dt>警告</dt><dd>参数不能为空 </dd></dl>
+<dl class="section note"><dt>注解</dt><dd>PROBE_START和PROBE_END成对出现，可以在一个函数内探测多个点，而FUNC_PROBE_START和FUNC_PROBE_END只能探测函数 </dd></dl>
+<dl class="section see"><dt>参见</dt><dd>参考sample相关用例 </dd></dl>
+
+<p class="definition">在文件 <a class="el" href="probe__mng_8h_source.html">probe_mng.h</a> 第 <a class="el" href="probe__mng_8h_source.html#l00046">46</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a113b5aaa7fde82086abbb95dba253c30"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a113b5aaa7fde82086abbb95dba253c30">&#9670;&nbsp;</a></span>PROBE_END</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define PROBE_END</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">probe_id, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">probe_name, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">thread_id&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>函数探测终点 </p><dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">probe_id</td><td>在函数内部唯一(与PROBE_START的probe_id保持一致) </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">probe_name</td><td>在函数内部唯一，探测点名称(与PROBE_START保持一致) </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">thread_id</td><td>如果是单线程，thread_id转入0，多线程传入线程id(0~n) </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section warning"><dt>警告</dt><dd>参数不能为空 </dd></dl>
+<dl class="section note"><dt>注解</dt><dd>PROBE_START和PROBE_END成对出现，可以在一个函数内探测多个点，而FUNC_PROBE_START和FUNC_PROBE_END只能探测函数 </dd></dl>
+<dl class="section see"><dt>参见</dt><dd>参考sample相关用例 </dd></dl>
+
+<p class="definition">在文件 <a class="el" href="probe__mng_8h_source.html">probe_mng.h</a> 第 <a class="el" href="probe__mng_8h_source.html#l00055">55</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a7b4a8db9160444cf951d13e643e6d151"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7b4a8db9160444cf951d13e643e6d151">&#9670;&nbsp;</a></span>FUNC_PROBE_START</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define FUNC_PROBE_START</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">thread_id</td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>函数探测起始点 </p><dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">thread_id</td><td>如果是单线程，thread_id转入0，多线程传入线程id(0~n) </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section warning"><dt>警告</dt><dd>参数不能为空 </dd></dl>
+<dl class="section note"><dt>注解</dt><dd>PROBE_START和PROBE_END成对出现，可以在一个函数内探测多个点，而FUNC_PROBE_START和FUNC_PROBE_END只能探测函数 </dd></dl>
+<dl class="section see"><dt>参见</dt><dd>参考sample相关用例 </dd></dl>
+
+<p class="definition">在文件 <a class="el" href="probe__mng_8h_source.html">probe_mng.h</a> 第 <a class="el" href="probe__mng_8h_source.html#l00062">62</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a646e69923d1ae371f582248b3c303519"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a646e69923d1ae371f582248b3c303519">&#9670;&nbsp;</a></span>FUNC_PROBE_END</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define FUNC_PROBE_END</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">thread_id</td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>函数探测终点 </p><dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">thread_id</td><td>如果是单线程，thread_id转入0，多线程传入线程id(0~n) </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section warning"><dt>警告</dt><dd>参数不能为空 </dd></dl>
+<dl class="section note"><dt>注解</dt><dd>PROBE_START和PROBE_END成对出现，可以在一个函数内探测多个点，而FUNC_PROBE_START和FUNC_PROBE_END只能探测函数 </dd></dl>
+<dl class="section see"><dt>参见</dt><dd>参考sample相关用例 </dd></dl>
+
+<p class="definition">在文件 <a class="el" href="probe__mng_8h_source.html">probe_mng.h</a> 第 <a class="el" href="probe__mng_8h_source.html#l00069">69</a> 行定义.</p>
+
+</div>
+</div>
+<h2 class="groupheader">类型定义说明</h2>
+<a id="ad017fff1600e69a88fa6c4486f34ead7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad017fff1600e69a88fa6c4486f34ead7">&#9670;&nbsp;</a></span>PROBE_NODE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef struct _ST_PROBE_NODE <a class="el" href="probe__mng_8h.html#ad017fff1600e69a88fa6c4486f34ead7">PROBE_NODE</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>探测节点结构 </p>
+
+<p class="definition">在文件 <a class="el" href="probe__mng_8h_source.html">probe_mng.h</a> 第 <a class="el" href="probe__mng_8h_source.html#l00018">18</a> 行定义.</p>
+
+</div>
+</div>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_f832923ad3cb060bc87ad85e68b8a1c3.html">public</a></li><li class="navelem"><a class="el" href="dir_0fb2101ba02d68f078970216a1fe0334.html">include</a></li><li class="navelem"><a class="el" href="dir_053b8ab4c6d0f736772003381ca40e09.html">libnap</a></li><li class="navelem"><a class="el" href="dir_ddef13e6bfc8d041ec26bc184d807cef.html">libperformace_mng</a></li><li class="navelem"><a class="el" href="probe__mng_8h.html">probe_mng.h</a></li>
+    <li class="footer">制作者
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.14 </li>
+  </ul>
+</div>
+</body>
+</html>

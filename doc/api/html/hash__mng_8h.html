@@ -1,0 +1,808 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.14"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>hash_mng.h 文件参考</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+  $(document).ready(initResizable);
+/* @license-end */</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="NAPLIB.PNG"/></td>
+    <td style="padding-left: 0.5em;">
+    <div id="projectbrief">网络分析平台库</div>
+    </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.8.14 -->
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',false,false,'search.php','搜索');
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(document).ready(function(){initNavTree('hash__mng_8h.html','');});
+/* @license-end */
+</script>
+<div id="doc-content">
+<div class="header">
+  <div class="summary">
+<a href="#nested-classes">结构体</a> &#124;
+<a href="#define-members">宏定义</a> &#124;
+<a href="#typedef-members">类型定义</a> &#124;
+<a href="#enum-members">枚举</a> &#124;
+<a href="#func-members">函数</a>  </div>
+  <div class="headertitle">
+<div class="title">hash_mng.h 文件参考</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p>HASH管理，基于DPDK HASH的封装  
+<a href="#details">更多...</a></p>
+
+<p><a href="hash__mng_8h_source.html">浏览源代码.</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
+结构体</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structUT__HASH__NODE.html">UT_HASH_NODE</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">union &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="unionUT__HASH__NODE_1_1__U__HASH__KEY.html">UT_HASH_NODE::_U_HASH_KEY</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structUT__HASH__INPUT.html">UT_HASH_INPUT</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
+宏定义</h2></td></tr>
+<tr class="memitem:a003ea398289a5ac63d1e2daa86ade9df"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="hash__mng_8h.html#a003ea398289a5ac63d1e2daa86ade9df">dpdk_hash_add_key_data</a>(hash_table,  key,  data)&#160;&#160;&#160;rte_hash_add_key_data(hash_table, key, data)</td></tr>
+<tr class="separator:a003ea398289a5ac63d1e2daa86ade9df"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa3671479169a3727242a505017df990a"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="hash__mng_8h.html#aa3671479169a3727242a505017df990a">dpdk_hash_lookup_data</a>(hash_table,  key,  data)&#160;&#160;&#160;rte_hash_lookup_data(hash_table, key, data)</td></tr>
+<tr class="separator:aa3671479169a3727242a505017df990a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aab92baa0eb677fe5cd3635dd76b1f71e"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="hash__mng_8h.html#aab92baa0eb677fe5cd3635dd76b1f71e">dpdk_hash_del_key</a>(hash_table,  key)&#160;&#160;&#160;rte_hash_del_key(hash_table, key)</td></tr>
+<tr class="separator:aab92baa0eb677fe5cd3635dd76b1f71e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
+类型定义</h2></td></tr>
+<tr class="memitem:ab3fa85a865217318d53d1abdc98aff97"><td class="memItemLeft" align="right" valign="top">typedef int32_t(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="hash__mng_8h.html#ab3fa85a865217318d53d1abdc98aff97">HASH_DATA_FREE_CB</a>) (void *data)</td></tr>
+<tr class="separator:ab3fa85a865217318d53d1abdc98aff97"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9628f44def963928eef7dbc57ec07ff2"><td class="memItemLeft" align="right" valign="top">typedef int32_t(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="hash__mng_8h.html#a9628f44def963928eef7dbc57ec07ff2">HASH_DATA_FOR_EACH_CB</a>) (void *data, void *arg)</td></tr>
+<tr class="separator:a9628f44def963928eef7dbc57ec07ff2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="enum-members"></a>
+枚举</h2></td></tr>
+<tr class="memitem:a120b9f2574286c52e5a82c25e0a59554"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="hash__mng_8h.html#a120b9f2574286c52e5a82c25e0a59554">DPDK_HASH_TYPE</a> { <a class="el" href="hash__mng_8h.html#a120b9f2574286c52e5a82c25e0a59554aac28c64b64047304d22938e03ac60fef">HASH_CRC</a> = 0
+ }</td></tr>
+<tr class="separator:a120b9f2574286c52e5a82c25e0a59554"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a45ac055c9392f1964c2b6632152653f6"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="hash__mng_8h.html#a45ac055c9392f1964c2b6632152653f6">UT_HASH_TYPE</a> { <a class="el" href="hash__mng_8h.html#a45ac055c9392f1964c2b6632152653f6a2a87dd70e4de2af3d238c96fa306ebb2">UT_HASH_INT</a> = 0, 
+<a class="el" href="hash__mng_8h.html#a45ac055c9392f1964c2b6632152653f6a481ccfdc547997a6b59a8e0a0fd108ca">UT_HASH_STR</a>
+ }</td></tr>
+<tr class="separator:a45ac055c9392f1964c2b6632152653f6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abbaf921ec75303e593384ba2f43b64b5"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="hash__mng_8h.html#abbaf921ec75303e593384ba2f43b64b5">HASH_MEMPOOL_TYPE</a> { <a class="el" href="hash__mng_8h.html#abbaf921ec75303e593384ba2f43b64b5ac69aadb4eb1077d2c36a25963d074a2d">HASH_DPDK_MEMPOOL</a> = 0
+ }</td></tr>
+<tr class="separator:abbaf921ec75303e593384ba2f43b64b5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+函数</h2></td></tr>
+<tr class="memitem:a6f91c486625e256077ddb296ba7e3391"><td class="memItemLeft" align="right" valign="top">struct rte_hash *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="hash__mng_8h.html#a6f91c486625e256077ddb296ba7e3391">dpdk_hash_create</a> (const char *hash_name, uint32_t hash_size, uint32_t key_len, <a class="el" href="hash__mng_8h.html#a120b9f2574286c52e5a82c25e0a59554">DPDK_HASH_TYPE</a> hash_type, int32_t numa_id)</td></tr>
+<tr class="separator:a6f91c486625e256077ddb296ba7e3391"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6123fb81f7877db7a2ed6d4557ad04b6"><td class="memItemLeft" align="right" valign="top">int32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="hash__mng_8h.html#a6123fb81f7877db7a2ed6d4557ad04b6">dpdk_hash_destroy</a> (struct rte_hash *hash_table)</td></tr>
+<tr class="separator:a6123fb81f7877db7a2ed6d4557ad04b6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a06b8c77aa255ecfeeebea872ef88a1e7"><td class="memItemLeft" align="right" valign="top">void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="hash__mng_8h.html#a06b8c77aa255ecfeeebea872ef88a1e7">ut_hash_create</a> (<a class="el" href="structUT__HASH__INPUT.html">UT_HASH_INPUT</a> *hash_input)</td></tr>
+<tr class="separator:a06b8c77aa255ecfeeebea872ef88a1e7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a81641dc61e5eac72ada51e05676531dc"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="hash__mng_8h.html#a81641dc61e5eac72ada51e05676531dc">ut_hash_destroy</a> (void *hash_handler)</td></tr>
+<tr class="separator:a81641dc61e5eac72ada51e05676531dc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a32e723d246636ef8544d1abfb8512132"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structUT__HASH__NODE.html">UT_HASH_NODE</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="hash__mng_8h.html#a32e723d246636ef8544d1abfb8512132">ut_hash_get_memnode</a> (void *hash_handler)</td></tr>
+<tr class="separator:a32e723d246636ef8544d1abfb8512132"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6233ac8e0044904853986f02be25a029"><td class="memItemLeft" align="right" valign="top">int32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="hash__mng_8h.html#a6233ac8e0044904853986f02be25a029">ut_hash_add</a> (void *hash_handler, void *key, <a class="el" href="structUT__HASH__NODE.html">UT_HASH_NODE</a> *hash_node)</td></tr>
+<tr class="separator:a6233ac8e0044904853986f02be25a029"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae418016914258bd1e7313b795e56de2f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structUT__HASH__NODE.html">UT_HASH_NODE</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="hash__mng_8h.html#ae418016914258bd1e7313b795e56de2f">ut_hash_find</a> (void *hash_handler, void *key)</td></tr>
+<tr class="separator:ae418016914258bd1e7313b795e56de2f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa0bac2946b003f4f9d6e265c4ef9e4a2"><td class="memItemLeft" align="right" valign="top">int32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="hash__mng_8h.html#aa0bac2946b003f4f9d6e265c4ef9e4a2">ut_hash_replace</a> (void *hash_handler, void *key, <a class="el" href="structUT__HASH__NODE.html">UT_HASH_NODE</a> *new_hash_node)</td></tr>
+<tr class="separator:aa0bac2946b003f4f9d6e265c4ef9e4a2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9c3d8dd317643559ae8e9d519089511d"><td class="memItemLeft" align="right" valign="top">int32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="hash__mng_8h.html#a9c3d8dd317643559ae8e9d519089511d">ut_hash_delete</a> (void *hash_handler, <a class="el" href="structUT__HASH__NODE.html">UT_HASH_NODE</a> *hash_node)</td></tr>
+<tr class="separator:a9c3d8dd317643559ae8e9d519089511d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3140563225b043ad4c8bd99699fdc20b"><td class="memItemLeft" align="right" valign="top">int32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="hash__mng_8h.html#a3140563225b043ad4c8bd99699fdc20b">ut_hash_for_each_cb</a> (void *hash_handler, <a class="el" href="hash__mng_8h.html#a9628f44def963928eef7dbc57ec07ff2">HASH_DATA_FOR_EACH_CB</a> data_for_each, void *arg)</td></tr>
+<tr class="separator:a3140563225b043ad4c8bd99699fdc20b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">详细描述</h2>
+<div class="textblock"><p>HASH管理，基于DPDK HASH的封装 </p>
+<dl class="section author"><dt>作者</dt><dd>hubimaso </dd></dl>
+<dl class="section version"><dt>版本</dt><dd>v1.0.0 </dd></dl>
+<dl class="section date"><dt>日期</dt><dd>2018-12-6 </dd></dl>
+<dl class="section note"><dt>注解</dt><dd>功能：包含hash的创建，销毁，元素添加，删除等接口. </dd></dl>
+<dl class="section since"><dt>自从</dt><dd>版本v1.0.0 提供的管理接口 </dd></dl>
+
+<p class="definition">在文件 <a class="el" href="hash__mng_8h_source.html">hash_mng.h</a> 中定义.</p>
+</div><h2 class="groupheader">宏定义说明</h2>
+<a id="a003ea398289a5ac63d1e2daa86ade9df"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a003ea398289a5ac63d1e2daa86ade9df">&#9670;&nbsp;</a></span>dpdk_hash_add_key_data</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define dpdk_hash_add_key_data</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">hash_table, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">key, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">data&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td>&#160;&#160;&#160;rte_hash_add_key_data(hash_table, key, data)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>基于dpdk库的hash插入元素 </p><dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">hash_table</td><td>struct rte_hash类型指针 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">key</td><td>void*类型，内存存储由使用者维护 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">data</td><td>void*类型，内存存储由使用者维护 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>key/data数据插入hash表中的位置，负值(&lt;0)表示插入失败 </dd></dl>
+<dl class="section warning"><dt>警告</dt><dd>参数不能为空 </dd></dl>
+<dl class="section note"><dt>注解</dt><dd>1.线程不安全，2.替换新增，如果存在则替换,3. 只能在dpdk eal线程中使用 </dd></dl>
+<dl class="section see"><dt>参见</dt><dd>用法参考examples中算法管理中hash管理相关例子 </dd></dl>
+
+<p class="definition">在文件 <a class="el" href="hash__mng_8h_source.html">hash_mng.h</a> 第 <a class="el" href="hash__mng_8h_source.html#l00120">120</a> 行定义.</p>
+
+</div>
+</div>
+<a id="aa3671479169a3727242a505017df990a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa3671479169a3727242a505017df990a">&#9670;&nbsp;</a></span>dpdk_hash_lookup_data</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define dpdk_hash_lookup_data</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">hash_table, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">key, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">data&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td>&#160;&#160;&#160;rte_hash_lookup_data(hash_table, key, data)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>基于dpdk库的hash查找元素 </p><dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">hash_table</td><td>struct rte_hash类型指针 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">key</td><td>void*类型，内存存储由使用者维护 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">data</td><td>void*类型，内存存储由使用者维护 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>正值(&gt;=0)表示已经存在，返回hash表所在位置，负值(&lt;0)表示没找到 </dd></dl>
+<dl class="section warning"><dt>警告</dt><dd>参数不能为空 </dd></dl>
+<dl class="section note"><dt>注解</dt><dd>1.线程安全,2. 只能在dpdk eal线程中使用 </dd></dl>
+<dl class="section see"><dt>参见</dt><dd>用法参考examples中算法管理中hash管理相关例子 </dd></dl>
+
+<p class="definition">在文件 <a class="el" href="hash__mng_8h_source.html">hash_mng.h</a> 第 <a class="el" href="hash__mng_8h_source.html#l00132">132</a> 行定义.</p>
+
+</div>
+</div>
+<a id="aab92baa0eb677fe5cd3635dd76b1f71e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aab92baa0eb677fe5cd3635dd76b1f71e">&#9670;&nbsp;</a></span>dpdk_hash_del_key</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define dpdk_hash_del_key</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">hash_table, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">key&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td>&#160;&#160;&#160;rte_hash_del_key(hash_table, key)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>基于dpdk库的hash删除元素 </p><dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">hash_table</td><td>struct rte_hash类型指针 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">key</td><td>void*类型，内存存储由使用者维护 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>正值(&gt;=0)表示已经存在，返回hash表所在位置,负值(&lt;0)表示删除失败 </dd></dl>
+<dl class="section warning"><dt>警告</dt><dd>参数不能为空 </dd></dl>
+<dl class="section note"><dt>注解</dt><dd>1.线程不安全,2.建议key和data是一个结构，注意data的释放,2. 只能在dpdk eal线程中使用 </dd></dl>
+<dl class="section see"><dt>参见</dt><dd>用法参考examples中算法管理中hash管理相关例子 </dd></dl>
+
+<p class="definition">在文件 <a class="el" href="hash__mng_8h_source.html">hash_mng.h</a> 第 <a class="el" href="hash__mng_8h_source.html#l00143">143</a> 行定义.</p>
+
+</div>
+</div>
+<h2 class="groupheader">类型定义说明</h2>
+<a id="ab3fa85a865217318d53d1abdc98aff97"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab3fa85a865217318d53d1abdc98aff97">&#9670;&nbsp;</a></span>HASH_DATA_FREE_CB</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef int32_t(* HASH_DATA_FREE_CB) (void *data)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<blockquote class="doxtable">
+<p>调用者DATA释放函数， 由调用者实现 </p>
+</blockquote>
+
+<p class="definition">在文件 <a class="el" href="hash__mng_8h_source.html">hash_mng.h</a> 第 <a class="el" href="hash__mng_8h_source.html#l00064">64</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a9628f44def963928eef7dbc57ec07ff2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9628f44def963928eef7dbc57ec07ff2">&#9670;&nbsp;</a></span>HASH_DATA_FOR_EACH_CB</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef int32_t(* HASH_DATA_FOR_EACH_CB) (void *data, void *arg)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<blockquote class="doxtable">
+<p>遍历HASH表， 处理每个节点，具体实现由调用者实现 </p>
+</blockquote>
+
+<p class="definition">在文件 <a class="el" href="hash__mng_8h_source.html">hash_mng.h</a> 第 <a class="el" href="hash__mng_8h_source.html#l00067">67</a> 行定义.</p>
+
+</div>
+</div>
+<h2 class="groupheader">枚举类型说明</h2>
+<a id="a120b9f2574286c52e5a82c25e0a59554"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a120b9f2574286c52e5a82c25e0a59554">&#9670;&nbsp;</a></span>DPDK_HASH_TYPE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="hash__mng_8h.html#a120b9f2574286c52e5a82c25e0a59554">DPDK_HASH_TYPE</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>dpdk hash算法 </p>
+<table class="fieldtable">
+<tr><th colspan="2">枚举值</th></tr><tr><td class="fieldname"><a id="a120b9f2574286c52e5a82c25e0a59554aac28c64b64047304d22938e03ac60fef"></a>HASH_CRC&#160;</td><td class="fielddoc"><p>crc hash算法 </p>
+</td></tr>
+</table>
+
+<p class="definition">在文件 <a class="el" href="hash__mng_8h_source.html">hash_mng.h</a> 第 <a class="el" href="hash__mng_8h_source.html#l00023">23</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a45ac055c9392f1964c2b6632152653f6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a45ac055c9392f1964c2b6632152653f6">&#9670;&nbsp;</a></span>UT_HASH_TYPE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="hash__mng_8h.html#a45ac055c9392f1964c2b6632152653f6">UT_HASH_TYPE</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>UT hash 类型 </p>
+<table class="fieldtable">
+<tr><th colspan="2">枚举值</th></tr><tr><td class="fieldname"><a id="a45ac055c9392f1964c2b6632152653f6a2a87dd70e4de2af3d238c96fa306ebb2"></a>UT_HASH_INT&#160;</td><td class="fielddoc"><p>key为int类型的hash </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a45ac055c9392f1964c2b6632152653f6a481ccfdc547997a6b59a8e0a0fd108ca"></a>UT_HASH_STR&#160;</td><td class="fielddoc"><p>key为字符串类型的hash </p>
+</td></tr>
+</table>
+
+<p class="definition">在文件 <a class="el" href="hash__mng_8h_source.html">hash_mng.h</a> 第 <a class="el" href="hash__mng_8h_source.html#l00031">31</a> 行定义.</p>
+
+</div>
+</div>
+<a id="abbaf921ec75303e593384ba2f43b64b5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abbaf921ec75303e593384ba2f43b64b5">&#9670;&nbsp;</a></span>HASH_MEMPOOL_TYPE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="hash__mng_8h.html#abbaf921ec75303e593384ba2f43b64b5">HASH_MEMPOOL_TYPE</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>用户数据内存池类型 </p>
+<table class="fieldtable">
+<tr><th colspan="2">枚举值</th></tr><tr><td class="fieldname"><a id="abbaf921ec75303e593384ba2f43b64b5ac69aadb4eb1077d2c36a25963d074a2d"></a>HASH_DPDK_MEMPOOL&#160;</td><td class="fielddoc"><p>使用dpdk内存池申请方式 </p>
+</td></tr>
+</table>
+
+<p class="definition">在文件 <a class="el" href="hash__mng_8h_source.html">hash_mng.h</a> 第 <a class="el" href="hash__mng_8h_source.html#l00040">40</a> 行定义.</p>
+
+</div>
+</div>
+<h2 class="groupheader">函数说明</h2>
+<a id="a6f91c486625e256077ddb296ba7e3391"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6f91c486625e256077ddb296ba7e3391">&#9670;&nbsp;</a></span>dpdk_hash_create()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">struct rte_hash* dpdk_hash_create </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>hash_name</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint32_t&#160;</td>
+          <td class="paramname"><em>hash_size</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint32_t&#160;</td>
+          <td class="paramname"><em>key_len</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="hash__mng_8h.html#a120b9f2574286c52e5a82c25e0a59554">DPDK_HASH_TYPE</a>&#160;</td>
+          <td class="paramname"><em>hash_type</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int32_t&#160;</td>
+          <td class="paramname"><em>numa_id</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>基于dpdk库的hash表创建 </p><dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">hash_name</td><td>hash表名称，具有唯一性 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">hash_size</td><td>hash表大小 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">key_len</td><td>key的长度，固定长度 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">hash_type</td><td>hash算法类型，目前仅支持HASH_CRC </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">numa_id</td><td>使用者可以通过get_numaid_by_cpuid获取numa_id 即使用者在对应cpu上操作numa_id上的内存 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>struct rte_hash类型指针 </dd></dl>
+<dl class="section warning"><dt>警告</dt><dd>入参不能为空 </dd></dl>
+<dl class="section note"><dt>注解</dt><dd>hash_name不能重名, 只能在dpdk eal线程中使用 </dd></dl>
+<dl class="section see"><dt>参见</dt><dd>用法参考examples中算法管理中hash管理相关例子 </dd></dl>
+
+</div>
+</div>
+<a id="a6123fb81f7877db7a2ed6d4557ad04b6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6123fb81f7877db7a2ed6d4557ad04b6">&#9670;&nbsp;</a></span>dpdk_hash_destroy()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int32_t dpdk_hash_destroy </td>
+          <td>(</td>
+          <td class="paramtype">struct rte_hash *&#160;</td>
+          <td class="paramname"><em>hash_table</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>基于dpdk库的hash表销毁 </p><dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">hash_table</td><td>struct rte_hash类型指针 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>成功：0，失败：-1 </dd></dl>
+<dl class="section warning"><dt>警告</dt><dd>入参不能为空 </dd></dl>
+<dl class="section note"><dt>注解</dt><dd>只能在dpdk eal线程中使用 </dd></dl>
+<dl class="section see"><dt>参见</dt><dd>用法参考examples中算法管理中hash管理相关例子 </dd></dl>
+
+</div>
+</div>
+<a id="a06b8c77aa255ecfeeebea872ef88a1e7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a06b8c77aa255ecfeeebea872ef88a1e7">&#9670;&nbsp;</a></span>ut_hash_create()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void* ut_hash_create </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structUT__HASH__INPUT.html">UT_HASH_INPUT</a> *&#160;</td>
+          <td class="paramname"><em>hash_input</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>基于UThash库的hash表创建 </p><dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">hash_input</td><td>创建hash表入参，详细见UT_HASH_INPUT结构定义 <br />
+</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>成功：hash handler指针，失败：NULL </dd></dl>
+<dl class="section warning"><dt>警告</dt><dd>参数不能为空 </dd></dl>
+<dl class="section note"><dt>注解</dt><dd><br />
+</dd></dl>
+<dl class="section see"><dt>参见</dt><dd>参考sample相关用例 </dd></dl>
+<dl><dt><b>示例: </b></dt><dd><a class="el" href="examples_2hash_mng_example_8c-example.html#a13">examples/hash_mng_example.c</a>.</dd>
+</dl>
+</div>
+</div>
+<a id="a81641dc61e5eac72ada51e05676531dc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a81641dc61e5eac72ada51e05676531dc">&#9670;&nbsp;</a></span>ut_hash_destroy()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ut_hash_destroy </td>
+          <td>(</td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>hash_handler</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>UThash 表销毁 </p><dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">hash_handler</td><td>hash表句柄 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>void 类型 </dd></dl>
+<dl class="section warning"><dt>警告</dt><dd>参数不能为空 </dd></dl>
+<dl class="section note"><dt>注解</dt><dd>非线程安全，必须等hash表停止操作后使用 </dd></dl>
+<dl class="section see"><dt>参见</dt><dd>参考sample相关用例 </dd></dl>
+<dl><dt><b>示例: </b></dt><dd><a class="el" href="examples_2hash_mng_example_8c-example.html#a22">examples/hash_mng_example.c</a>.</dd>
+</dl>
+</div>
+</div>
+<a id="a32e723d246636ef8544d1abfb8512132"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a32e723d246636ef8544d1abfb8512132">&#9670;&nbsp;</a></span>ut_hash_get_memnode()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structUT__HASH__NODE.html">UT_HASH_NODE</a>* ut_hash_get_memnode </td>
+          <td>(</td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>hash_handler</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>UThash 获取内存节点接口(非线程安全) </p><dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">hash_handler</td><td>hash表句柄 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>成功：hash_node指针，失败：NULL </dd></dl>
+<dl class="section warning"><dt>警告</dt><dd>参数不能为空 </dd></dl>
+<dl class="section note"><dt>注解</dt><dd><br />
+</dd></dl>
+<dl class="section see"><dt>参见</dt><dd>参考sample相关用例 </dd></dl>
+<dl><dt><b>示例: </b></dt><dd><a class="el" href="examples_2hash_mng_example_8c-example.html#a16">examples/hash_mng_example.c</a>.</dd>
+</dl>
+</div>
+</div>
+<a id="a6233ac8e0044904853986f02be25a029"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6233ac8e0044904853986f02be25a029">&#9670;&nbsp;</a></span>ut_hash_add()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int32_t ut_hash_add </td>
+          <td>(</td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>hash_handler</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>key</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structUT__HASH__NODE.html">UT_HASH_NODE</a> *&#160;</td>
+          <td class="paramname"><em>hash_node</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>UThash表添加接口(非线程安全) </p><dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">hash_handler</td><td>hash表句柄 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">key</td><td>要新增的key </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">hash_node</td><td>要新增的node </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>成功：0，失败：-1 </dd></dl>
+<dl class="section warning"><dt>警告</dt><dd>参数不能为空 </dd></dl>
+<dl class="section note"><dt>注解</dt><dd>key必须是value结构的成员 </dd></dl>
+<dl class="section see"><dt>参见</dt><dd>参考sample相关用例 </dd></dl>
+<dl><dt><b>示例: </b></dt><dd><a class="el" href="examples_2hash_mng_example_8c-example.html#a18">examples/hash_mng_example.c</a>.</dd>
+</dl>
+</div>
+</div>
+<a id="ae418016914258bd1e7313b795e56de2f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae418016914258bd1e7313b795e56de2f">&#9670;&nbsp;</a></span>ut_hash_find()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structUT__HASH__NODE.html">UT_HASH_NODE</a>* ut_hash_find </td>
+          <td>(</td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>hash_handler</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>key</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>UThash表查找接口(线程安全) </p><dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">hash_handler</td><td>hash表句柄 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">key</td><td>要查找的key </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>成功： hash_node指针，失败：NULL </dd></dl>
+<dl class="section warning"><dt>警告</dt><dd>参数不能为空 </dd></dl>
+<dl class="section note"><dt>注解</dt><dd><br />
+</dd></dl>
+<dl class="section see"><dt>参见</dt><dd>参考sample相关用例 </dd></dl>
+<dl><dt><b>示例: </b></dt><dd><a class="el" href="examples_2hash_mng_example_8c-example.html#a19">examples/hash_mng_example.c</a>.</dd>
+</dl>
+</div>
+</div>
+<a id="aa0bac2946b003f4f9d6e265c4ef9e4a2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa0bac2946b003f4f9d6e265c4ef9e4a2">&#9670;&nbsp;</a></span>ut_hash_replace()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int32_t ut_hash_replace </td>
+          <td>(</td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>hash_handler</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>key</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structUT__HASH__NODE.html">UT_HASH_NODE</a> *&#160;</td>
+          <td class="paramname"><em>new_hash_node</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>UThash表替换接口 </p><dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">hash_handler</td><td>hash表句柄 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">key</td><td>要替换的key </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">new_hash_node</td><td>要替换的node </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section warning"><dt>警告</dt><dd>参数不能为空 </dd></dl>
+<dl class="section note"><dt>注解</dt><dd><br />
+</dd></dl>
+<dl class="section see"><dt>参见</dt><dd>参考sample相关用例 </dd></dl>
+
+</div>
+</div>
+<a id="a9c3d8dd317643559ae8e9d519089511d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9c3d8dd317643559ae8e9d519089511d">&#9670;&nbsp;</a></span>ut_hash_delete()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int32_t ut_hash_delete </td>
+          <td>(</td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>hash_handler</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structUT__HASH__NODE.html">UT_HASH_NODE</a> *&#160;</td>
+          <td class="paramname"><em>hash_node</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>UThash表删除接口 </p><dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">hash_handler</td><td>hash表句柄 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">hash_node</td><td>要删除的node </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>成功：0，失败：-1 </dd></dl>
+<dl class="section warning"><dt>警告</dt><dd>参数不能为空 </dd></dl>
+<dl class="section note"><dt>注解</dt><dd><br />
+</dd></dl>
+<dl class="section see"><dt>参见</dt><dd>参考sample相关用例 </dd></dl>
+<dl><dt><b>示例: </b></dt><dd><a class="el" href="examples_2hash_mng_example_8c-example.html#a21">examples/hash_mng_example.c</a>.</dd>
+</dl>
+</div>
+</div>
+<a id="a3140563225b043ad4c8bd99699fdc20b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3140563225b043ad4c8bd99699fdc20b">&#9670;&nbsp;</a></span>ut_hash_for_each_cb()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int32_t ut_hash_for_each_cb </td>
+          <td>(</td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>hash_handler</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="hash__mng_8h.html#a9628f44def963928eef7dbc57ec07ff2">HASH_DATA_FOR_EACH_CB</a>&#160;</td>
+          <td class="paramname"><em>data_for_each</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>arg</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>说明 </p><dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">hash_handler</td><td>hash表句柄 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">data_for_each</td><td>遍历HASH表， 处理每个节点，具体实现由调用者实现 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">arg</td><td>data_for_each扩展参数 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>成功：0，失败：-1 </dd></dl>
+<dl class="section warning"><dt>警告</dt><dd>参数不能为空 </dd></dl>
+<dl class="section note"><dt>注解</dt><dd><br />
+</dd></dl>
+<dl class="section see"><dt>参见</dt><dd>参考sample相关用例 </dd></dl>
+<dl><dt><b>示例: </b></dt><dd><a class="el" href="examples_2hash_mng_example_8c-example.html#a20">examples/hash_mng_example.c</a>.</dd>
+</dl>
+</div>
+</div>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_f832923ad3cb060bc87ad85e68b8a1c3.html">public</a></li><li class="navelem"><a class="el" href="dir_0fb2101ba02d68f078970216a1fe0334.html">include</a></li><li class="navelem"><a class="el" href="dir_053b8ab4c6d0f736772003381ca40e09.html">libnap</a></li><li class="navelem"><a class="el" href="dir_28fd67f72b126aae21e8ae8ce644a1b6.html">libalgorithm_mng</a></li><li class="navelem"><a class="el" href="hash__mng_8h.html">hash_mng.h</a></li>
+    <li class="footer">制作者
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.14 </li>
+  </ul>
+</div>
+</body>
+</html>

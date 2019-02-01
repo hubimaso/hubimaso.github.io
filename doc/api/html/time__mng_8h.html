@@ -1,0 +1,625 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.14"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>time_mng.h 文件参考</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+  $(document).ready(initResizable);
+/* @license-end */</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="NAPLIB.PNG"/></td>
+    <td style="padding-left: 0.5em;">
+    <div id="projectbrief">网络分析平台库</div>
+    </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.8.14 -->
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',false,false,'search.php','搜索');
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(document).ready(function(){initNavTree('time__mng_8h.html','');});
+/* @license-end */
+</script>
+<div id="doc-content">
+<div class="header">
+  <div class="summary">
+<a href="#typedef-members">类型定义</a> &#124;
+<a href="#enum-members">枚举</a> &#124;
+<a href="#func-members">函数</a>  </div>
+  <div class="headertitle">
+<div class="title">time_mng.h 文件参考</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p>时间管理接口  
+<a href="#details">更多...</a></p>
+
+<p><a href="time__mng_8h_source.html">浏览源代码.</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
+类型定义</h2></td></tr>
+<tr class="memitem:ad78e1f3e15405b3fb1f7e11089d2c416"><td class="memItemLeft" align="right" valign="top">typedef void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="time__mng_8h.html#ad78e1f3e15405b3fb1f7e11089d2c416">DPDK_TIMER_CB</a>) (void *timer, void *arg)</td></tr>
+<tr class="separator:ad78e1f3e15405b3fb1f7e11089d2c416"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="enum-members"></a>
+枚举</h2></td></tr>
+<tr class="memitem:ab9571277e5727124056a1f61978fd393"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="time__mng_8h.html#ab9571277e5727124056a1f61978fd393">TIME_FORMAT</a> { <a class="el" href="time__mng_8h.html#ab9571277e5727124056a1f61978fd393a5e7ac690db78523b2fa30e55899a4e09">FORMAT_NOSPACE</a>, 
+<a class="el" href="time__mng_8h.html#ab9571277e5727124056a1f61978fd393a40d0cfe3797a27f0b988a1c4e59edcd7">FORMAT_WITHBAR</a>
+ }</td></tr>
+<tr class="separator:ab9571277e5727124056a1f61978fd393"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a15e578df774330149ea4e903cff537f5"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="time__mng_8h.html#a15e578df774330149ea4e903cff537f5">DPDK_TIMER_TYPE</a> { <a class="el" href="time__mng_8h.html#a15e578df774330149ea4e903cff537f5af8d339737d7b298e3c2c4bc8197e5f3c">DPDK_SINGLE</a>, 
+<a class="el" href="time__mng_8h.html#a15e578df774330149ea4e903cff537f5af17ebc0431c1d5af946f0de7c4a4299d">DPDK_PERIODICAL</a>
+ }</td></tr>
+<tr class="separator:a15e578df774330149ea4e903cff537f5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a95a8e855f9f6d9f44536f51c061baa8a"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="time__mng_8h.html#a95a8e855f9f6d9f44536f51c061baa8a">DPDK_TIME_ACC</a> { <a class="el" href="time__mng_8h.html#a95a8e855f9f6d9f44536f51c061baa8aa3cf533ca8f9be65de7409f20c1497c72">TIME_S</a>, 
+<a class="el" href="time__mng_8h.html#a95a8e855f9f6d9f44536f51c061baa8aab2234de0b81a6c02ab51dcfc63065bca">TIME_MS</a>, 
+<a class="el" href="time__mng_8h.html#a95a8e855f9f6d9f44536f51c061baa8aaef96c3935bbc898edd62723ad8cb00ea">TIME_US</a>, 
+<a class="el" href="time__mng_8h.html#a95a8e855f9f6d9f44536f51c061baa8aac04d6fce03ff6dfde82088100ad3f3d7">TIME_NS</a>
+ }</td></tr>
+<tr class="separator:a95a8e855f9f6d9f44536f51c061baa8a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+函数</h2></td></tr>
+<tr class="memitem:a87144a564fbcd4a2e369897351144264"><td class="memItemLeft" align="right" valign="top">void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="time__mng_8h.html#a87144a564fbcd4a2e369897351144264">dpdk_timer_create</a> (<a class="el" href="time__mng_8h.html#a95a8e855f9f6d9f44536f51c061baa8a">DPDK_TIME_ACC</a> time_type, uint32_t time, <a class="el" href="time__mng_8h.html#a15e578df774330149ea4e903cff537f5">DPDK_TIMER_TYPE</a> type, uint32_t cpu_id, <a class="el" href="time__mng_8h.html#ad78e1f3e15405b3fb1f7e11089d2c416">DPDK_TIMER_CB</a> cb, void *arg)</td></tr>
+<tr class="separator:a87144a564fbcd4a2e369897351144264"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ada6ccd02e8cb2e6e9586b95c3e54484f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="time__mng_8h.html#ada6ccd02e8cb2e6e9586b95c3e54484f">dpdk_timer_destroy</a> (void *timer)</td></tr>
+<tr class="separator:ada6ccd02e8cb2e6e9586b95c3e54484f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af74ef23a1b7c5654dfad6c6cd41c81ed"><td class="memItemLeft" align="right" valign="top">void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="time__mng_8h.html#af74ef23a1b7c5654dfad6c6cd41c81ed">ngx_msec_timer_create</a> (uint64_t msec, void(*timer_cb)(void *timer))</td></tr>
+<tr class="separator:af74ef23a1b7c5654dfad6c6cd41c81ed"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2a1808db5c9ccc97c5c2836d61330f2f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="time__mng_8h.html#a2a1808db5c9ccc97c5c2836d61330f2f">ngx_timer_destroy</a> (void *timer)</td></tr>
+<tr class="separator:a2a1808db5c9ccc97c5c2836d61330f2f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3ffa79ae39fdc1781e0936c2b49276e1"><td class="memItemLeft" align="right" valign="top">uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="time__mng_8h.html#a3ffa79ae39fdc1781e0936c2b49276e1">get_systime_sec</a> (void)</td></tr>
+<tr class="separator:a3ffa79ae39fdc1781e0936c2b49276e1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac3682eba56d23f7c20d41afcc35ac037"><td class="memItemLeft" align="right" valign="top">uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="time__mng_8h.html#ac3682eba56d23f7c20d41afcc35ac037">get_systime_ms</a> (void)</td></tr>
+<tr class="separator:ac3682eba56d23f7c20d41afcc35ac037"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae4ec76c48a15da807ec2cb23c57377f2"><td class="memItemLeft" align="right" valign="top">uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="time__mng_8h.html#ae4ec76c48a15da807ec2cb23c57377f2">get_systime_us</a> (void)</td></tr>
+<tr class="separator:ae4ec76c48a15da807ec2cb23c57377f2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a16d2dc56d30fa2c9e9d59e0c7680a1e3"><td class="memItemLeft" align="right" valign="top">uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="time__mng_8h.html#a16d2dc56d30fa2c9e9d59e0c7680a1e3">get_systime_ns</a> (void)</td></tr>
+<tr class="separator:a16d2dc56d30fa2c9e9d59e0c7680a1e3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0727b4989a1e2d340350df4c9adbf9a7"><td class="memItemLeft" align="right" valign="top">uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="time__mng_8h.html#a0727b4989a1e2d340350df4c9adbf9a7">get_systime_cycles</a> (void)</td></tr>
+<tr class="separator:a0727b4989a1e2d340350df4c9adbf9a7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aecf981de6293b195f731cfe42289265a"><td class="memItemLeft" align="right" valign="top">uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="time__mng_8h.html#aecf981de6293b195f731cfe42289265a">get_cycles_to_ns</a> (int64_t cycles)</td></tr>
+<tr class="separator:aecf981de6293b195f731cfe42289265a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aeaa734ede095f784296f3a664df35eaf"><td class="memItemLeft" align="right" valign="top">int32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="time__mng_8h.html#aeaa734ede095f784296f3a664df35eaf">get_timestamp_covert_tostring</a> (char *time_string, int32_t string_len, <a class="el" href="time__mng_8h.html#ab9571277e5727124056a1f61978fd393">TIME_FORMAT</a> time_format, uint64_t timestamp)</td></tr>
+<tr class="separator:aeaa734ede095f784296f3a664df35eaf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a00df52c7bff6f2040f407a151381e3ef"><td class="memItemLeft" align="right" valign="top">int32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="time__mng_8h.html#a00df52c7bff6f2040f407a151381e3ef">get_timetring_covert_tostamp</a> (const char *time_string, <a class="el" href="time__mng_8h.html#ab9571277e5727124056a1f61978fd393">TIME_FORMAT</a> time_format, uint64_t *timestamp)</td></tr>
+<tr class="separator:a00df52c7bff6f2040f407a151381e3ef"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">详细描述</h2>
+<div class="textblock"><p>时间管理接口 </p>
+<dl class="section author"><dt>作者</dt><dd>hubimaso </dd></dl>
+<dl class="section version"><dt>版本</dt><dd>v1.0.0 </dd></dl>
+<dl class="section date"><dt>日期</dt><dd>2018-12-20 </dd></dl>
+<dl class="section note"><dt>注解</dt><dd>功能： </dd></dl>
+<dl class="section since"><dt>自从</dt><dd>版本v1.0.0 提供的管理接口 </dd></dl>
+
+<p class="definition">在文件 <a class="el" href="time__mng_8h_source.html">time_mng.h</a> 中定义.</p>
+</div><h2 class="groupheader">类型定义说明</h2>
+<a id="ad78e1f3e15405b3fb1f7e11089d2c416"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad78e1f3e15405b3fb1f7e11089d2c416">&#9670;&nbsp;</a></span>DPDK_TIMER_CB</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef void(* DPDK_TIMER_CB) (void *timer, void *arg)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>DPDK timer回调函数 </p>
+
+<p class="definition">在文件 <a class="el" href="time__mng_8h_source.html">time_mng.h</a> 第 <a class="el" href="time__mng_8h_source.html#l00049">49</a> 行定义.</p>
+
+</div>
+</div>
+<h2 class="groupheader">枚举类型说明</h2>
+<a id="ab9571277e5727124056a1f61978fd393"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab9571277e5727124056a1f61978fd393">&#9670;&nbsp;</a></span>TIME_FORMAT</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="time__mng_8h.html#ab9571277e5727124056a1f61978fd393">TIME_FORMAT</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>时间格式 </p>
+<table class="fieldtable">
+<tr><th colspan="2">枚举值</th></tr><tr><td class="fieldname"><a id="ab9571277e5727124056a1f61978fd393a5e7ac690db78523b2fa30e55899a4e09"></a>FORMAT_NOSPACE&#160;</td><td class="fielddoc"><p>20181108170723 </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ab9571277e5727124056a1f61978fd393a40d0cfe3797a27f0b988a1c4e59edcd7"></a>FORMAT_WITHBAR&#160;</td><td class="fielddoc"><p>2018-11-08 17:07:23 </p>
+</td></tr>
+</table>
+
+<p class="definition">在文件 <a class="el" href="time__mng_8h_source.html">time_mng.h</a> 第 <a class="el" href="time__mng_8h_source.html#l00020">20</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a15e578df774330149ea4e903cff537f5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a15e578df774330149ea4e903cff537f5">&#9670;&nbsp;</a></span>DPDK_TIMER_TYPE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="time__mng_8h.html#a15e578df774330149ea4e903cff537f5">DPDK_TIMER_TYPE</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>TIMER 触发类型 </p>
+<table class="fieldtable">
+<tr><th colspan="2">枚举值</th></tr><tr><td class="fieldname"><a id="a15e578df774330149ea4e903cff537f5af8d339737d7b298e3c2c4bc8197e5f3c"></a>DPDK_SINGLE&#160;</td><td class="fielddoc"><p>单次触发 </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a15e578df774330149ea4e903cff537f5af17ebc0431c1d5af946f0de7c4a4299d"></a>DPDK_PERIODICAL&#160;</td><td class="fielddoc"><p>周期触发 </p>
+</td></tr>
+</table>
+
+<p class="definition">在文件 <a class="el" href="time__mng_8h_source.html">time_mng.h</a> 第 <a class="el" href="time__mng_8h_source.html#l00029">29</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a95a8e855f9f6d9f44536f51c061baa8a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a95a8e855f9f6d9f44536f51c061baa8a">&#9670;&nbsp;</a></span>DPDK_TIME_ACC</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="time__mng_8h.html#a95a8e855f9f6d9f44536f51c061baa8a">DPDK_TIME_ACC</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>时间精度 </p>
+<table class="fieldtable">
+<tr><th colspan="2">枚举值</th></tr><tr><td class="fieldname"><a id="a95a8e855f9f6d9f44536f51c061baa8aa3cf533ca8f9be65de7409f20c1497c72"></a>TIME_S&#160;</td><td class="fielddoc"><p>秒 </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a95a8e855f9f6d9f44536f51c061baa8aab2234de0b81a6c02ab51dcfc63065bca"></a>TIME_MS&#160;</td><td class="fielddoc"><p>毫秒 </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a95a8e855f9f6d9f44536f51c061baa8aaef96c3935bbc898edd62723ad8cb00ea"></a>TIME_US&#160;</td><td class="fielddoc"><p>微妙 </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a95a8e855f9f6d9f44536f51c061baa8aac04d6fce03ff6dfde82088100ad3f3d7"></a>TIME_NS&#160;</td><td class="fielddoc"><p>纳秒 </p>
+</td></tr>
+</table>
+
+<p class="definition">在文件 <a class="el" href="time__mng_8h_source.html">time_mng.h</a> 第 <a class="el" href="time__mng_8h_source.html#l00038">38</a> 行定义.</p>
+
+</div>
+</div>
+<h2 class="groupheader">函数说明</h2>
+<a id="a87144a564fbcd4a2e369897351144264"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a87144a564fbcd4a2e369897351144264">&#9670;&nbsp;</a></span>dpdk_timer_create()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void* dpdk_timer_create </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="time__mng_8h.html#a95a8e855f9f6d9f44536f51c061baa8a">DPDK_TIME_ACC</a>&#160;</td>
+          <td class="paramname"><em>time_type</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint32_t&#160;</td>
+          <td class="paramname"><em>time</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="time__mng_8h.html#a15e578df774330149ea4e903cff537f5">DPDK_TIMER_TYPE</a>&#160;</td>
+          <td class="paramname"><em>type</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint32_t&#160;</td>
+          <td class="paramname"><em>cpu_id</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="time__mng_8h.html#ad78e1f3e15405b3fb1f7e11089d2c416">DPDK_TIMER_CB</a>&#160;</td>
+          <td class="paramname"><em>cb</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>arg</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>dpdk 的timer创建 </p><dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">time_type</td><td>触发时间 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">time</td><td>触发时间 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">type</td><td>timer类型 SINGLE为单次触发，PERIODICAL 为周期触发 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">cpu_id</td><td>timer回调函数所在绑定的cpu </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">cb</td><td>timer回调函数 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">arg</td><td>timer回调函数参数 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>成功：timer句柄指针，失败：NULL </dd></dl>
+<dl class="section warning"><dt>警告</dt><dd>参数不能为空 </dd></dl>
+<dl class="section note"><dt>注解</dt><dd>必须在dpdk线程中添加 </dd></dl>
+<dl class="section see"><dt>参见</dt><dd>参考sample相关用例 </dd></dl>
+
+</div>
+</div>
+<a id="ada6ccd02e8cb2e6e9586b95c3e54484f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ada6ccd02e8cb2e6e9586b95c3e54484f">&#9670;&nbsp;</a></span>dpdk_timer_destroy()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void dpdk_timer_destroy </td>
+          <td>(</td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>timer</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>dpdk 的timer销毁 </p><dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">timer</td><td>timer句柄指针 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section warning"><dt>警告</dt><dd>参数不能为空 </dd></dl>
+<dl class="section see"><dt>参见</dt><dd>参考sample相关用例 </dd></dl>
+
+</div>
+</div>
+<a id="af74ef23a1b7c5654dfad6c6cd41c81ed"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af74ef23a1b7c5654dfad6c6cd41c81ed">&#9670;&nbsp;</a></span>ngx_msec_timer_create()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void* ngx_msec_timer_create </td>
+          <td>(</td>
+          <td class="paramtype">uint64_t&#160;</td>
+          <td class="paramname"><em>msec</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void(*)(void *timer)&#160;</td>
+          <td class="paramname"><em>timer_cb</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>nginx 的timer创建，仅支持毫秒级别 </p><dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">msec</td><td>触发时间 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">timer_cb</td><td>nginx timer回调函数 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>成功：timer 句柄指针，失败：NULL </dd></dl>
+<dl class="section warning"><dt>警告</dt><dd>参数不能为空 </dd></dl>
+<dl class="section note"><dt>注解</dt><dd>ngx_msec_timer_create 可以在回调函数中再次使用 </dd></dl>
+<dl class="section see"><dt>参见</dt><dd>参考sample相关用例 </dd></dl>
+
+</div>
+</div>
+<a id="a2a1808db5c9ccc97c5c2836d61330f2f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2a1808db5c9ccc97c5c2836d61330f2f">&#9670;&nbsp;</a></span>ngx_timer_destroy()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ngx_timer_destroy </td>
+          <td>(</td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>timer</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>nginx timer销毁 </p><dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">timer</td><td>timer句柄指针 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section warning"><dt>警告</dt><dd>参数不能为空 </dd></dl>
+<dl class="section see"><dt>参见</dt><dd>参考sample相关用例 </dd></dl>
+
+</div>
+</div>
+<a id="a3ffa79ae39fdc1781e0936c2b49276e1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3ffa79ae39fdc1781e0936c2b49276e1">&#9670;&nbsp;</a></span>get_systime_sec()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint64_t get_systime_sec </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>获取系统时间戳，精度秒 </p><dl class="section return"><dt>返回</dt><dd>时间戳 </dd></dl>
+<dl class="section see"><dt>参见</dt><dd>参考sample相关用例 </dd></dl>
+
+</div>
+</div>
+<a id="ac3682eba56d23f7c20d41afcc35ac037"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac3682eba56d23f7c20d41afcc35ac037">&#9670;&nbsp;</a></span>get_systime_ms()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint64_t get_systime_ms </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>获取系统时间戳，精度毫秒 </p><dl class="section return"><dt>返回</dt><dd>时间戳 </dd></dl>
+<dl class="section see"><dt>参见</dt><dd>参考sample相关用例 </dd></dl>
+
+</div>
+</div>
+<a id="ae4ec76c48a15da807ec2cb23c57377f2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae4ec76c48a15da807ec2cb23c57377f2">&#9670;&nbsp;</a></span>get_systime_us()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint64_t get_systime_us </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>获取系统时间戳，精度微秒 </p><dl class="section return"><dt>返回</dt><dd>时间戳 </dd></dl>
+<dl class="section see"><dt>参见</dt><dd>参考sample相关用例 </dd></dl>
+
+</div>
+</div>
+<a id="a16d2dc56d30fa2c9e9d59e0c7680a1e3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a16d2dc56d30fa2c9e9d59e0c7680a1e3">&#9670;&nbsp;</a></span>get_systime_ns()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint64_t get_systime_ns </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>获取系统时间戳，精度纳秒 </p><dl class="section return"><dt>返回</dt><dd>时间戳 </dd></dl>
+<dl class="section see"><dt>参见</dt><dd>参考sample相关用例 </dd></dl>
+
+</div>
+</div>
+<a id="a0727b4989a1e2d340350df4c9adbf9a7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0727b4989a1e2d340350df4c9adbf9a7">&#9670;&nbsp;</a></span>get_systime_cycles()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint64_t get_systime_cycles </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>获取系统时钟周期 </p><dl class="section return"><dt>返回</dt><dd>时钟周期 </dd></dl>
+<dl class="section see"><dt>参见</dt><dd>参考sample相关用例 </dd></dl>
+
+</div>
+</div>
+<a id="aecf981de6293b195f731cfe42289265a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aecf981de6293b195f731cfe42289265a">&#9670;&nbsp;</a></span>get_cycles_to_ns()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint64_t get_cycles_to_ns </td>
+          <td>(</td>
+          <td class="paramtype">int64_t&#160;</td>
+          <td class="paramname"><em>cycles</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>时钟周期转换成ns </p><dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">cycles</td><td>时钟周期 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>该时钟周期对应的ns </dd></dl>
+<dl class="section see"><dt>参见</dt><dd>参考sample相关用例 </dd></dl>
+
+</div>
+</div>
+<a id="aeaa734ede095f784296f3a664df35eaf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aeaa734ede095f784296f3a664df35eaf">&#9670;&nbsp;</a></span>get_timestamp_covert_tostring()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int32_t get_timestamp_covert_tostring </td>
+          <td>(</td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>time_string</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int32_t&#160;</td>
+          <td class="paramname"><em>string_len</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="time__mng_8h.html#ab9571277e5727124056a1f61978fd393">TIME_FORMAT</a>&#160;</td>
+          <td class="paramname"><em>time_format</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint64_t&#160;</td>
+          <td class="paramname"><em>timestamp</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>时间格式转换(时间戳&ndash;&gt;字符串) </p><dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[out]</td><td class="paramname">time_string</td><td>转换时间字符串，time_string内存使用者维护 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">string_len</td><td>time_string的长度 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">time_format</td><td>时间转换格式类型 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">timestamp</td><td>1.使用者输入的时间戳，如果timestamp不为 0,则将timestamp转换成字符串时间； 2.如果timestamp为0，将系统时间转换成字符串时间 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>成功：0，失败：-1 </dd></dl>
+<dl class="section warning"><dt>警告</dt><dd>参数不能为空 </dd></dl>
+<dl class="section see"><dt>参见</dt><dd>参考sample相关用例 </dd></dl>
+<dl><dt><b>示例: </b></dt><dd><a class="el" href="examples_2time_mng_example_8c-example.html#a0">examples/time_mng_example.c</a>.</dd>
+</dl>
+</div>
+</div>
+<a id="a00df52c7bff6f2040f407a151381e3ef"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a00df52c7bff6f2040f407a151381e3ef">&#9670;&nbsp;</a></span>get_timetring_covert_tostamp()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int32_t get_timetring_covert_tostamp </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>time_string</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="time__mng_8h.html#ab9571277e5727124056a1f61978fd393">TIME_FORMAT</a>&#160;</td>
+          <td class="paramname"><em>time_format</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint64_t *&#160;</td>
+          <td class="paramname"><em>timestamp</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>时间格式转换(字符串&ndash;&gt;时间戳) </p><dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">time_string</td><td>时间字符串 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">time_format</td><td>指定格式(FORMAT_NOSPACE/FORMAT_WITHBAR) </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">timestamp</td><td>待转换的时间戳 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>成功：0，失败：-1 </dd></dl>
+<dl class="section warning"><dt>警告</dt><dd>参数不能为空 </dd></dl>
+<dl class="section see"><dt>参见</dt><dd>参考sample相关用例 </dd></dl>
+<dl><dt><b>示例: </b></dt><dd><a class="el" href="examples_2time_mng_example_8c-example.html#a3">examples/time_mng_example.c</a>.</dd>
+</dl>
+</div>
+</div>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_f832923ad3cb060bc87ad85e68b8a1c3.html">public</a></li><li class="navelem"><a class="el" href="dir_0fb2101ba02d68f078970216a1fe0334.html">include</a></li><li class="navelem"><a class="el" href="dir_053b8ab4c6d0f736772003381ca40e09.html">libnap</a></li><li class="navelem"><a class="el" href="dir_8858912534478e3d7f2658d6fbe2d898.html">libtime_mng</a></li><li class="navelem"><a class="el" href="time__mng_8h.html">time_mng.h</a></li>
+    <li class="footer">制作者
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.14 </li>
+  </ul>
+</div>
+</body>
+</html>

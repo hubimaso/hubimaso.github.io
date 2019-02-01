@@ -1,0 +1,842 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.14"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>mem_mng.h 文件参考</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+  $(document).ready(initResizable);
+/* @license-end */</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="NAPLIB.PNG"/></td>
+    <td style="padding-left: 0.5em;">
+    <div id="projectbrief">网络分析平台库</div>
+    </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.8.14 -->
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',false,false,'search.php','搜索');
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(document).ready(function(){initNavTree('mem__mng_8h.html','');});
+/* @license-end */
+</script>
+<div id="doc-content">
+<div class="header">
+  <div class="summary">
+<a href="#define-members">宏定义</a> &#124;
+<a href="#func-members">函数</a>  </div>
+  <div class="headertitle">
+<div class="title">mem_mng.h 文件参考</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p>内存管理接口 基于DPDK库封装  
+<a href="#details">更多...</a></p>
+
+<p><a href="mem__mng_8h_source.html">浏览源代码.</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
+宏定义</h2></td></tr>
+<tr class="memitem:aba6da9eecada385df4441328356162a8"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mem__mng_8h.html#aba6da9eecada385df4441328356162a8">dpdk_mempool_get</a>(mempool_ptr,  mem_node)&#160;&#160;&#160;rte_mempool_get(mempool_ptr, mem_node)</td></tr>
+<tr class="separator:aba6da9eecada385df4441328356162a8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4e61359c80f87a36b29e048b98bead99"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mem__mng_8h.html#a4e61359c80f87a36b29e048b98bead99">dpdk_mempool_get_bulk</a>(mempool_ptr,  mem_node_table,  mem_node_num)&#160;&#160;&#160;rte_mempool_get_bulk(mempool_ptr, mem_node_table, mem_node_num)</td></tr>
+<tr class="separator:a4e61359c80f87a36b29e048b98bead99"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6e12a91f8f6fdf55322c5c925f241dc2"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mem__mng_8h.html#a6e12a91f8f6fdf55322c5c925f241dc2">dpdk_mempool_put</a>(mempool_ptr,  mem_node)&#160;&#160;&#160;rte_mempool_put(mempool_ptr, mem_node)</td></tr>
+<tr class="separator:a6e12a91f8f6fdf55322c5c925f241dc2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8950d5a03004254f8f8ad5fbe08a0050"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mem__mng_8h.html#a8950d5a03004254f8f8ad5fbe08a0050">dpdk_mempool_put_bulk</a>(mempool_ptr,  mem_node_table,  mem_node_num)&#160;&#160;&#160;rte_mempool_put_bulk(mempool_ptr, mem_node_table, mem_node_num)</td></tr>
+<tr class="separator:a8950d5a03004254f8f8ad5fbe08a0050"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+函数</h2></td></tr>
+<tr class="memitem:a3f47e5ffd810e7e5f8b47534175283d6"><td class="memItemLeft" align="right" valign="top">struct rte_mempool *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mem__mng_8h.html#a3f47e5ffd810e7e5f8b47534175283d6">dpdk_mempool_create</a> (const char *name, unsigned n, unsigned elt_size, int32_t numa_id, unsigned flags)</td></tr>
+<tr class="separator:a3f47e5ffd810e7e5f8b47534175283d6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae3f96dedd2d02960b4405638f647a3e0"><td class="memItemLeft" align="right" valign="top">struct rte_mempool *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mem__mng_8h.html#ae3f96dedd2d02960b4405638f647a3e0">dpdk_mempool_create_ext</a> (const char *name, unsigned n, unsigned elt_size, unsigned cache_size, unsigned private_data_size, rte_mempool_ctor_t *mp_init, void *mp_init_arg, rte_mempool_obj_cb_t *obj_init, void *obj_init_arg, int socket_id, unsigned flags)</td></tr>
+<tr class="separator:ae3f96dedd2d02960b4405638f647a3e0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1b4a9ceb7ec2ea913da2351803f236d2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mem__mng_8h.html#a1b4a9ceb7ec2ea913da2351803f236d2">dpdk_mempool_destroy</a> (struct rte_mempool *mempool_ptr)</td></tr>
+<tr class="separator:a1b4a9ceb7ec2ea913da2351803f236d2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1ac8d6aa55a9d6481b5416ae09f03c1f"><td class="memItemLeft" align="right" valign="top">void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mem__mng_8h.html#a1ac8d6aa55a9d6481b5416ae09f03c1f">dpdk_malloc</a> (const char *mem_name, size_t mem_size)</td></tr>
+<tr class="separator:a1ac8d6aa55a9d6481b5416ae09f03c1f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6d96babcdd4e8e63d2a103e40f4def10"><td class="memItemLeft" align="right" valign="top">void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mem__mng_8h.html#a6d96babcdd4e8e63d2a103e40f4def10">dpdk_calloc</a> (const char *mem_name, size_t mem_num, size_t mem_size)</td></tr>
+<tr class="separator:a6d96babcdd4e8e63d2a103e40f4def10"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac03cabe3227ede35b59edd450f70403c"><td class="memItemLeft" align="right" valign="top">void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mem__mng_8h.html#ac03cabe3227ede35b59edd450f70403c">dpdk_realloc</a> (void *mem_ptr, size_t mem_size)</td></tr>
+<tr class="separator:ac03cabe3227ede35b59edd450f70403c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a68ebdb1a18667a85f3dbba78070ced75"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mem__mng_8h.html#a68ebdb1a18667a85f3dbba78070ced75">dpdk_free</a> (void *mem_ptr)</td></tr>
+<tr class="separator:a68ebdb1a18667a85f3dbba78070ced75"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad0b65ca3965eac003cb7d35cb7e39f24"><td class="memItemLeft" align="right" valign="top">void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mem__mng_8h.html#ad0b65ca3965eac003cb7d35cb7e39f24">dpdk_memcpy</a> (void *dst, const void *src, size_t n)</td></tr>
+<tr class="separator:ad0b65ca3965eac003cb7d35cb7e39f24"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8bdbf58a5fc834d42c1874afd0c56dcf"><td class="memItemLeft" align="right" valign="top">void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mem__mng_8h.html#a8bdbf58a5fc834d42c1874afd0c56dcf">ngx_slabpool_create</a> (const char *name, uint32_t pool_size, int32_t numa_id, unsigned flags)</td></tr>
+<tr class="separator:a8bdbf58a5fc834d42c1874afd0c56dcf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a826cb353089b575cd6c023d38a07d927"><td class="memItemLeft" align="right" valign="top">void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mem__mng_8h.html#a826cb353089b575cd6c023d38a07d927">ngx_slabpool_get</a> (void *slab_pool, uint32_t node_size)</td></tr>
+<tr class="separator:a826cb353089b575cd6c023d38a07d927"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1dd37d0162b8edf72dccc0ce41da4d62"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mem__mng_8h.html#a1dd37d0162b8edf72dccc0ce41da4d62">ngx_slabpool_put</a> (void *slab_pool, void *mem_node)</td></tr>
+<tr class="separator:a1dd37d0162b8edf72dccc0ce41da4d62"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a58e5b39dbd596c133c5871175ee243f1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mem__mng_8h.html#a58e5b39dbd596c133c5871175ee243f1">ngx_slabpool_destroy</a> (void *slab_pool)</td></tr>
+<tr class="separator:a58e5b39dbd596c133c5871175ee243f1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">详细描述</h2>
+<div class="textblock"><p>内存管理接口 基于DPDK库封装 </p>
+<dl class="section author"><dt>作者</dt><dd>hubimaso </dd></dl>
+<dl class="section version"><dt>版本</dt><dd>v1.0.0 </dd></dl>
+<dl class="section date"><dt>日期</dt><dd>2018-12-11 </dd></dl>
+<dl class="section note"><dt>注解</dt><dd>功能： </dd></dl>
+<dl class="section since"><dt>自从</dt><dd>版本v1.0.0 提供的管理接口 </dd></dl>
+
+<p class="definition">在文件 <a class="el" href="mem__mng_8h_source.html">mem_mng.h</a> 中定义.</p>
+</div><h2 class="groupheader">宏定义说明</h2>
+<a id="aba6da9eecada385df4441328356162a8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aba6da9eecada385df4441328356162a8">&#9670;&nbsp;</a></span>dpdk_mempool_get</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define dpdk_mempool_get</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">mempool_ptr, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">mem_node&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td>&#160;&#160;&#160;rte_mempool_get(mempool_ptr, mem_node)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>dpdk 内存节点申请 </p><dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">mempool_ptr</td><td>内存池指针 </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">mem_node</td><td>二级void **指针，从内存池中取得 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>成功：0，失败：&lt;0 </dd></dl>
+<dl class="section warning"><dt>警告</dt><dd>参数不能为空 </dd></dl>
+<dl class="section see"><dt>参见</dt><dd>参考sample相关用例 </dd></dl>
+<dl><dt><b>示例: </b></dt><dd><a class="el" href="examples_2mem_mng_example_8c-example.html#a6">examples/mem_mng_example.c</a>.</dd>
+</dl>
+<p class="definition">在文件 <a class="el" href="mem__mng_8h_source.html">mem_mng.h</a> 第 <a class="el" href="mem__mng_8h_source.html#l00057">57</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a4e61359c80f87a36b29e048b98bead99"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4e61359c80f87a36b29e048b98bead99">&#9670;&nbsp;</a></span>dpdk_mempool_get_bulk</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define dpdk_mempool_get_bulk</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">mempool_ptr, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">mem_node_table, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">mem_node_num&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td>&#160;&#160;&#160;rte_mempool_get_bulk(mempool_ptr, mem_node_table, mem_node_num)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>dpdk 多个节点内存申请 </p><dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">mempool_ptr</td><td>内存池指针 </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">mem_node_table</td><td>二级void **指针数组，从内存池中取得mem_node_num内存节点 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">mem_node_num</td><td>要申请内存节点的个数 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>成功：0，失败：&lt;0 </dd></dl>
+<dl class="section warning"><dt>警告</dt><dd>参数不能为空 </dd></dl>
+<dl class="section see"><dt>参见</dt><dd>参考sample相关用例 </dd></dl>
+<dl><dt><b>示例: </b></dt><dd><a class="el" href="examples_2mem_mng_example_8c-example.html#a9">examples/mem_mng_example.c</a>.</dd>
+</dl>
+<p class="definition">在文件 <a class="el" href="mem__mng_8h_source.html">mem_mng.h</a> 第 <a class="el" href="mem__mng_8h_source.html#l00066">66</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a6e12a91f8f6fdf55322c5c925f241dc2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6e12a91f8f6fdf55322c5c925f241dc2">&#9670;&nbsp;</a></span>dpdk_mempool_put</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define dpdk_mempool_put</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">mempool_ptr, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">mem_node&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td>&#160;&#160;&#160;rte_mempool_put(mempool_ptr, mem_node)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>dpdk 释放节点内存到内存池 </p><dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">mempool_ptr</td><td>内存池指针 </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">mem_node</td><td>void* 内存节点指针 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>void类型 </dd></dl>
+<dl class="section warning"><dt>警告</dt><dd>参数不能为空 </dd></dl>
+<dl class="section see"><dt>参见</dt><dd>参考sample相关用例 </dd></dl>
+<dl><dt><b>示例: </b></dt><dd><a class="el" href="examples_2mem_mng_example_8c-example.html#a8">examples/mem_mng_example.c</a>.</dd>
+</dl>
+<p class="definition">在文件 <a class="el" href="mem__mng_8h_source.html">mem_mng.h</a> 第 <a class="el" href="mem__mng_8h_source.html#l00076">76</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a8950d5a03004254f8f8ad5fbe08a0050"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8950d5a03004254f8f8ad5fbe08a0050">&#9670;&nbsp;</a></span>dpdk_mempool_put_bulk</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define dpdk_mempool_put_bulk</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">mempool_ptr, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">mem_node_table, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">mem_node_num&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td>&#160;&#160;&#160;rte_mempool_put_bulk(mempool_ptr, mem_node_table, mem_node_num)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>dpdk 释放多个节点内存到内存池 </p><dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">mempool_ptr</td><td>内存池指针 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">mem_node_table</td><td>二级void **指针数组 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">mem_node_num</td><td>要释放内存节点的个数 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>void类型 </dd></dl>
+<dl class="section warning"><dt>警告</dt><dd>参数不能为空 </dd></dl>
+<dl class="section see"><dt>参见</dt><dd>参考sample相关用例 </dd></dl>
+<dl><dt><b>示例: </b></dt><dd><a class="el" href="examples_2mem_mng_example_8c-example.html#a10">examples/mem_mng_example.c</a>.</dd>
+</dl>
+<p class="definition">在文件 <a class="el" href="mem__mng_8h_source.html">mem_mng.h</a> 第 <a class="el" href="mem__mng_8h_source.html#l00085">85</a> 行定义.</p>
+
+</div>
+</div>
+<h2 class="groupheader">函数说明</h2>
+<a id="a3f47e5ffd810e7e5f8b47534175283d6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3f47e5ffd810e7e5f8b47534175283d6">&#9670;&nbsp;</a></span>dpdk_mempool_create()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">struct rte_mempool* dpdk_mempool_create </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>name</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">unsigned&#160;</td>
+          <td class="paramname"><em>n</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">unsigned&#160;</td>
+          <td class="paramname"><em>elt_size</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int32_t&#160;</td>
+          <td class="paramname"><em>numa_id</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">unsigned&#160;</td>
+          <td class="paramname"><em>flags</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>dpdk内存池创建 </p><dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">name</td><td>内存池名称，不能重名 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">n</td><td>内存池大小 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">elt_size</td><td>内存节点大小，仅支持固定长度 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">numa_id</td><td>要申请的内存在numa_id对应的内存上申请，使用者可以通过get_numaid_by_cpuid获取numa_id 即使用者在对应cpu上操作numa_id上的内存。 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">flags</td><td>0:表示多生产多消费； MEMPOOL_F_SP_PUT|MEMPOOL_F_SC_GET 表示单生产单消费； MEMPOOL_F_SC_GET 表示多生产单消费； MEMPOOL_F_SP_PUT 表示单生产多消费； </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>成功：内存池指针，失败：NULL </dd></dl>
+<dl class="section warning"><dt>警告</dt><dd>参数不能为空 </dd></dl>
+<dl class="section see"><dt>参见</dt><dd>参考sample相关用例 </dd></dl>
+<dl><dt><b>示例: </b></dt><dd><a class="el" href="examples_2mem_mng_example_8c-example.html#a0">examples/mem_mng_example.c</a>.</dd>
+</dl>
+</div>
+</div>
+<a id="ae3f96dedd2d02960b4405638f647a3e0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae3f96dedd2d02960b4405638f647a3e0">&#9670;&nbsp;</a></span>dpdk_mempool_create_ext()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">struct rte_mempool* dpdk_mempool_create_ext </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>name</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">unsigned&#160;</td>
+          <td class="paramname"><em>n</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">unsigned&#160;</td>
+          <td class="paramname"><em>elt_size</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">unsigned&#160;</td>
+          <td class="paramname"><em>cache_size</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">unsigned&#160;</td>
+          <td class="paramname"><em>private_data_size</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">rte_mempool_ctor_t *&#160;</td>
+          <td class="paramname"><em>mp_init</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>mp_init_arg</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">rte_mempool_obj_cb_t *&#160;</td>
+          <td class="paramname"><em>obj_init</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>obj_init_arg</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>socket_id</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">unsigned&#160;</td>
+          <td class="paramname"><em>flags</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>dpdk内存池创建扩展（针对网卡收包，mbuf包内存使用） </p><dl class="section see"><dt>参见</dt><dd>因为使用场景特殊, 参考DPDK L2/L3 samples </dd></dl>
+
+</div>
+</div>
+<a id="a1b4a9ceb7ec2ea913da2351803f236d2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1b4a9ceb7ec2ea913da2351803f236d2">&#9670;&nbsp;</a></span>dpdk_mempool_destroy()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void dpdk_mempool_destroy </td>
+          <td>(</td>
+          <td class="paramtype">struct rte_mempool *&#160;</td>
+          <td class="paramname"><em>mempool_ptr</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>dpdk 内存池销毁 </p><dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">mempool_ptr</td><td>内存池指针 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>void类型 </dd></dl>
+<dl class="section warning"><dt>警告</dt><dd>参数不能为空 </dd></dl>
+<dl class="section see"><dt>参见</dt><dd>参考sample相关用例 </dd></dl>
+<dl><dt><b>示例: </b></dt><dd><a class="el" href="examples_2mem_mng_example_8c-example.html#a11">examples/mem_mng_example.c</a>.</dd>
+</dl>
+</div>
+</div>
+<a id="a1ac8d6aa55a9d6481b5416ae09f03c1f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1ac8d6aa55a9d6481b5416ae09f03c1f">&#9670;&nbsp;</a></span>dpdk_malloc()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void* dpdk_malloc </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>mem_name</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>mem_size</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>dpdk 动态内存申请(建议数据面内存使用，使用内存池；该接口建议申请大块内存) </p><dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">mem_name</td><td>内存节点名称（可以为NULL） </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">mem_size</td><td>内存节点大小 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>成功：内存指针，失败：NULL </dd></dl>
+<dl class="section warning"><dt>警告</dt><dd>参数不能为空, 线程不安全 </dd></dl>
+<dl class="section see"><dt>参见</dt><dd>参考sample相关用例 </dd></dl>
+
+</div>
+</div>
+<a id="a6d96babcdd4e8e63d2a103e40f4def10"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6d96babcdd4e8e63d2a103e40f4def10">&#9670;&nbsp;</a></span>dpdk_calloc()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void* dpdk_calloc </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>mem_name</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>mem_num</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>mem_size</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>dpdk 动态内存申请(建议数据面内存使用，使用内存池；该接口建议申请大块内存) </p><dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">mem_name</td><td>内存节点名称（可以为NULL） </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">mem_num</td><td>内存节点个数 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">mem_size</td><td>内存节点大小 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>成功：内存指针，失败：NULL </dd></dl>
+<dl class="section warning"><dt>警告</dt><dd>参数不能为空, 线程不安全 </dd></dl>
+<dl class="section note"><dt>注解</dt><dd><br />
+</dd></dl>
+<dl class="section see"><dt>参见</dt><dd>参考sample相关用例 </dd></dl>
+
+</div>
+</div>
+<a id="ac03cabe3227ede35b59edd450f70403c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac03cabe3227ede35b59edd450f70403c">&#9670;&nbsp;</a></span>dpdk_realloc()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void* dpdk_realloc </td>
+          <td>(</td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>mem_ptr</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>mem_size</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>dpdk 动态内存申请(建议数据面内存使用，使用内存池；该接口建议申请大块内存) </p><dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">mem_ptr</td><td>内存指针 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">mem_size</td><td>内存节点大小 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>成功：内存指针，失败：NULL </dd></dl>
+<dl class="section warning"><dt>警告</dt><dd>参数不能为空, 线程不安全 </dd></dl>
+<dl class="section note"><dt>注解</dt><dd><br />
+</dd></dl>
+<dl class="section see"><dt>参见</dt><dd>参考sample相关用例 </dd></dl>
+
+</div>
+</div>
+<a id="a68ebdb1a18667a85f3dbba78070ced75"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a68ebdb1a18667a85f3dbba78070ced75">&#9670;&nbsp;</a></span>dpdk_free()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void dpdk_free </td>
+          <td>(</td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>mem_ptr</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>dpdk 动态内存节点释放 </p><dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">mem_ptr</td><td>内存指针 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>void类型 </dd></dl>
+<dl class="section warning"><dt>警告</dt><dd>参数不能为空 </dd></dl>
+<dl class="section note"><dt>注解</dt><dd><br />
+</dd></dl>
+<dl class="section see"><dt>参见</dt><dd>参考sample相关用例 </dd></dl>
+
+</div>
+</div>
+<a id="ad0b65ca3965eac003cb7d35cb7e39f24"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad0b65ca3965eac003cb7d35cb7e39f24">&#9670;&nbsp;</a></span>dpdk_memcpy()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void* dpdk_memcpy </td>
+          <td>(</td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>dst</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const void *&#160;</td>
+          <td class="paramname"><em>src</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>n</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>dpdk 内存拷贝 </p><dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">dst</td><td>目的内存指针 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">src</td><td>源内存指针 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">n</td><td>源内存内容大小 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>目的内存指针指向的内存 </dd></dl>
+<dl class="section warning"><dt>警告</dt><dd>参数不能为空 </dd></dl>
+<dl class="section note"><dt>注解</dt><dd><br />
+</dd></dl>
+<dl class="section see"><dt>参见</dt><dd>参考sample相关用例 </dd></dl>
+
+</div>
+</div>
+<a id="a8bdbf58a5fc834d42c1874afd0c56dcf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8bdbf58a5fc834d42c1874afd0c56dcf">&#9670;&nbsp;</a></span>ngx_slabpool_create()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void* ngx_slabpool_create </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>name</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint32_t&#160;</td>
+          <td class="paramname"><em>pool_size</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int32_t&#160;</td>
+          <td class="paramname"><em>numa_id</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">unsigned&#160;</td>
+          <td class="paramname"><em>flags</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>nginx slabpool 不固定长度（建议在用户面数据小节点（&lt;2048字节）内存使用) </p><dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">name</td><td>slabpool名称 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">pool_size</td><td>slabpool申请总内存大小 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">numa_id</td><td>要申请的内存在numa_id对应的内存上申请，使用者可以通过get_numaid_by_cpuid获取numa_id 即使用者在对应cpu上操作numa_id上的内存。暂时未扩展使用，可以填0 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">flags</td><td>类似dpdk_mempool_create,暂时未扩展使用，可以填0 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>成功：slabpool指针句柄，失败：NULL </dd></dl>
+<dl class="section warning"><dt>警告</dt><dd>参数不能为空 </dd></dl>
+<dl class="section see"><dt>参见</dt><dd>参考sample相关用例 </dd></dl>
+
+</div>
+</div>
+<a id="a826cb353089b575cd6c023d38a07d927"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a826cb353089b575cd6c023d38a07d927">&#9670;&nbsp;</a></span>ngx_slabpool_get()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void* ngx_slabpool_get </td>
+          <td>(</td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>slab_pool</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint32_t&#160;</td>
+          <td class="paramname"><em>node_size</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>nginx slabpool 节点申请内存 </p><dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">slab_pool</td><td>指针句柄 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">node_size</td><td>申请节点内存大小 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>成功：内存节点指针，失败：NULL </dd></dl>
+<dl class="section warning"><dt>警告</dt><dd>参数不能为空 </dd></dl>
+<dl class="section see"><dt>参见</dt><dd>参考sample相关用例 </dd></dl>
+
+</div>
+</div>
+<a id="a1dd37d0162b8edf72dccc0ce41da4d62"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1dd37d0162b8edf72dccc0ce41da4d62">&#9670;&nbsp;</a></span>ngx_slabpool_put()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ngx_slabpool_put </td>
+          <td>(</td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>slab_pool</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>mem_node</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>nginx slabpool 节点内存归还 </p><dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">slab_pool</td><td>指针句柄 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">mem_node</td><td>内存节点指针 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section warning"><dt>警告</dt><dd>参数不能为空 </dd></dl>
+<dl class="section see"><dt>参见</dt><dd>参考sample相关用例 </dd></dl>
+
+</div>
+</div>
+<a id="a58e5b39dbd596c133c5871175ee243f1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a58e5b39dbd596c133c5871175ee243f1">&#9670;&nbsp;</a></span>ngx_slabpool_destroy()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ngx_slabpool_destroy </td>
+          <td>(</td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>slab_pool</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>nginx slabpool 销毁 </p><dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">slab_pool</td><td>指针句柄 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section warning"><dt>警告</dt><dd>参数不能为空 </dd></dl>
+<dl class="section see"><dt>参见</dt><dd>参考sample相关用例 </dd></dl>
+
+</div>
+</div>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_f832923ad3cb060bc87ad85e68b8a1c3.html">public</a></li><li class="navelem"><a class="el" href="dir_0fb2101ba02d68f078970216a1fe0334.html">include</a></li><li class="navelem"><a class="el" href="dir_053b8ab4c6d0f736772003381ca40e09.html">libnap</a></li><li class="navelem"><a class="el" href="dir_938ecd2357064ede2222dabeb226d063.html">libmem_mng</a></li><li class="navelem"><a class="el" href="mem__mng_8h.html">mem_mng.h</a></li>
+    <li class="footer">制作者
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.14 </li>
+  </ul>
+</div>
+</body>
+</html>

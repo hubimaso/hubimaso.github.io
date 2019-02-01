@@ -1,0 +1,80 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.14"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>examples/time_mng_example.c</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+  $(document).ready(initResizable);
+/* @license-end */</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="NAPLIB.PNG"/></td>
+    <td style="padding-left: 0.5em;">
+    <div id="projectbrief">网络分析平台库</div>
+    </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.8.14 -->
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',false,false,'search.php','搜索');
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(document).ready(function(){initNavTree('examples_2time_mng_example_8c-example.html','');});
+/* @license-end */
+</script>
+<div id="doc-content">
+<div class="header">
+  <div class="headertitle">
+<div class="title">examples/time_mng_example.c</div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="fragment"><div class="line"><span class="preprocessor">#ifdef __cplusplus      </span></div><div class="line"><span class="keyword">extern</span> <span class="stringliteral">&quot;C&quot;</span> {</div><div class="line"><span class="preprocessor">#endif</span></div><div class="line"><span class="preprocessor">#include &quot;<a class="code" href="libnap_8h.html">libnap.h</a>&quot;</span></div><div class="line"></div><div class="line">int32_t time_test_start(<span class="keywordtype">void</span>)</div><div class="line">{</div><div class="line">    int32_t ret;</div><div class="line">    <span class="comment">/* 时间格式转换 */</span></div><div class="line">    <span class="keywordtype">char</span> time_buf[64] = {<span class="charliteral">&#39;\0&#39;</span>};</div><div class="line">    <span class="comment">/* 按照 20181108170723 格式将系统时间转换成时间戳*/</span></div><div class="line">    ret = <a name="a0"></a><a class="code" href="time__mng_8h.html#aeaa734ede095f784296f3a664df35eaf">get_timestamp_covert_tostring</a>(time_buf, 64, <a name="a1"></a><a class="code" href="time__mng_8h.html#ab9571277e5727124056a1f61978fd393a5e7ac690db78523b2fa30e55899a4e09">FORMAT_NOSPACE</a>, 0);</div><div class="line">    <span class="keywordflow">if</span> (ret) <span class="keywordflow">return</span> FAILED;</div><div class="line">    <span class="comment">/* 按照 2018-11-08 17:07:23 格式将系统时间转换成时间戳*/</span> </div><div class="line">    ret = <a class="code" href="time__mng_8h.html#aeaa734ede095f784296f3a664df35eaf">get_timestamp_covert_tostring</a>(time_buf, 64, <a name="a2"></a><a class="code" href="time__mng_8h.html#ab9571277e5727124056a1f61978fd393a40d0cfe3797a27f0b988a1c4e59edcd7">FORMAT_WITHBAR</a>, 0);</div><div class="line">    <span class="keywordflow">if</span> (ret) <span class="keywordflow">return</span> FAILED;</div><div class="line">    <span class="comment">/* 按照 20181108170723 格式将指定时间转换成时间戳*/</span></div><div class="line">    ret = <a class="code" href="time__mng_8h.html#aeaa734ede095f784296f3a664df35eaf">get_timestamp_covert_tostring</a>(time_buf, 64, <a class="code" href="time__mng_8h.html#ab9571277e5727124056a1f61978fd393a5e7ac690db78523b2fa30e55899a4e09">FORMAT_NOSPACE</a>, 1545639201);</div><div class="line">    <span class="keywordflow">if</span> (ret) <span class="keywordflow">return</span> FAILED;</div><div class="line">    <span class="comment">/* 按照 2018-11-08 17:07:23 格式将指定时间转换成时间戳*/</span></div><div class="line">    ret = <a class="code" href="time__mng_8h.html#aeaa734ede095f784296f3a664df35eaf">get_timestamp_covert_tostring</a>(time_buf, 64, <a class="code" href="time__mng_8h.html#ab9571277e5727124056a1f61978fd393a40d0cfe3797a27f0b988a1c4e59edcd7">FORMAT_WITHBAR</a>, 1545639201);</div><div class="line">    <span class="keywordflow">if</span> (ret) <span class="keywordflow">return</span> FAILED;</div><div class="line">    uint64_t timestamp = 0;</div><div class="line">    <span class="comment">/* 按照 2018-11-08 17:07:23 格式将指定时间转换成时间戳 */</span></div><div class="line">    ret = <a name="a3"></a><a class="code" href="time__mng_8h.html#a00df52c7bff6f2040f407a151381e3ef">get_timetring_covert_tostamp</a>(<span class="stringliteral">&quot;2018-11-08 17:07:23&quot;</span>, <a class="code" href="time__mng_8h.html#ab9571277e5727124056a1f61978fd393a40d0cfe3797a27f0b988a1c4e59edcd7">FORMAT_WITHBAR</a>, &amp;timestamp);</div><div class="line">    <span class="keywordflow">if</span> (ret) <span class="keywordflow">return</span> FAILED;</div><div class="line">    <span class="comment">/* 按照 20181108170723 格式将指定时间转换成时间戳 */</span></div><div class="line">    ret = <a class="code" href="time__mng_8h.html#a00df52c7bff6f2040f407a151381e3ef">get_timetring_covert_tostamp</a>(<span class="stringliteral">&quot;20181108170723&quot;</span>, <a class="code" href="time__mng_8h.html#ab9571277e5727124056a1f61978fd393a5e7ac690db78523b2fa30e55899a4e09">FORMAT_NOSPACE</a>, &amp;timestamp);</div><div class="line">    <span class="keywordflow">if</span> (ret) <span class="keywordflow">return</span> FAILED;</div><div class="line">    <span class="keywordflow">return</span> <a name="a4"></a><a class="code" href="libnap_8h.html#aa90cac659d18e8ef6294c7ae337f6b58">SUCCESS</a>;</div><div class="line">}</div><div class="line"><span class="preprocessor">#ifdef __cplusplus      </span></div><div class="line">}</div><div class="line"><span class="preprocessor">#endif</span></div></div><!-- fragment --> </div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="footer">制作者
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.14 </li>
+  </ul>
+</div>
+</body>
+</html>

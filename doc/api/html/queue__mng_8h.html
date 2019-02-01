@@ -1,0 +1,381 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.14"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>queue_mng.h 文件参考</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+  $(document).ready(initResizable);
+/* @license-end */</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="NAPLIB.PNG"/></td>
+    <td style="padding-left: 0.5em;">
+    <div id="projectbrief">网络分析平台库</div>
+    </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.8.14 -->
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',false,false,'search.php','搜索');
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(document).ready(function(){initNavTree('queue__mng_8h.html','');});
+/* @license-end */
+</script>
+<div id="doc-content">
+<div class="header">
+  <div class="summary">
+<a href="#define-members">宏定义</a> &#124;
+<a href="#func-members">函数</a>  </div>
+  <div class="headertitle">
+<div class="title">queue_mng.h 文件参考</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p>DPDK无锁队列接口  
+<a href="#details">更多...</a></p>
+
+<p><a href="queue__mng_8h_source.html">浏览源代码.</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
+宏定义</h2></td></tr>
+<tr class="memitem:a816ad5e47606303f85593505f3e2fd3d"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="queue__mng_8h.html#a816ad5e47606303f85593505f3e2fd3d">dpdk_obj_enqueue</a>(queue_ptr,  obj)&#160;&#160;&#160;rte_ring_enqueue(queue_ptr, obj)</td></tr>
+<tr class="separator:a816ad5e47606303f85593505f3e2fd3d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae077ac8984c5b05425168b598f4089ca"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="queue__mng_8h.html#ae077ac8984c5b05425168b598f4089ca">dpdk_obj_dequeue</a>(queue_ptr,  obj)&#160;&#160;&#160;rte_ring_dequeue(queue_ptr, obj)</td></tr>
+<tr class="separator:ae077ac8984c5b05425168b598f4089ca"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1c3858de0ff41a88307e94b03b29f76c"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="queue__mng_8h.html#a1c3858de0ff41a88307e94b03b29f76c">dpdk_objs_enqueue</a>(queue_ptr,  obj_table,  n,  free_space)&#160;&#160;&#160;rte_ring_enqueue_burst(queue_ptr, obj_table, n, free_space)</td></tr>
+<tr class="separator:a1c3858de0ff41a88307e94b03b29f76c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae240025a418686eec35d94eb140fe289"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="queue__mng_8h.html#ae240025a418686eec35d94eb140fe289">dpdk_objs_dequeue</a>(queue_ptr,  obj_table,  n,  available)&#160;&#160;&#160;rte_ring_dequeue_burst(queue_ptr, obj_table, n, available)</td></tr>
+<tr class="separator:ae240025a418686eec35d94eb140fe289"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+函数</h2></td></tr>
+<tr class="memitem:aead081bb49ec84a8cf497f5d27bd41cf"><td class="memItemLeft" align="right" valign="top">struct rte_ring *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="queue__mng_8h.html#aead081bb49ec84a8cf497f5d27bd41cf">dpdk_queue_create</a> (const char *name, unsigned count, int numa_id, unsigned flags)</td></tr>
+<tr class="separator:aead081bb49ec84a8cf497f5d27bd41cf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a502434b55b2f2e35fc751589046a9867"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="queue__mng_8h.html#a502434b55b2f2e35fc751589046a9867">dpdk_queue_destroy</a> (struct rte_ring *queue_ptr)</td></tr>
+<tr class="separator:a502434b55b2f2e35fc751589046a9867"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">详细描述</h2>
+<div class="textblock"><p>DPDK无锁队列接口 </p>
+<dl class="section author"><dt>作者</dt><dd>hubimaso </dd></dl>
+<dl class="section version"><dt>版本</dt><dd>v1.0.0 </dd></dl>
+<dl class="section date"><dt>日期</dt><dd>2018-12-20 </dd></dl>
+<dl class="section note"><dt>注解</dt><dd>功能： </dd></dl>
+<dl class="section since"><dt>自从</dt><dd>版本v1.0.0 提供的管理接口 </dd></dl>
+
+<p class="definition">在文件 <a class="el" href="queue__mng_8h_source.html">queue_mng.h</a> 中定义.</p>
+</div><h2 class="groupheader">宏定义说明</h2>
+<a id="a816ad5e47606303f85593505f3e2fd3d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a816ad5e47606303f85593505f3e2fd3d">&#9670;&nbsp;</a></span>dpdk_obj_enqueue</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define dpdk_obj_enqueue</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">queue_ptr, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">obj&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td>&#160;&#160;&#160;rte_ring_enqueue(queue_ptr, obj)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>单个对象入队 </p><dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">queue_ptr</td><td>队列指针 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">obj</td><td>void*类型，对象指针, 对象内存由使用者维护 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>成功：0，失败：&lt;0 </dd></dl>
+<dl class="section see"><dt>参见</dt><dd>参考sample相关用例 </dd></dl>
+
+<p class="definition">在文件 <a class="el" href="queue__mng_8h_source.html">queue_mng.h</a> 第 <a class="el" href="queue__mng_8h_source.html#l00047">47</a> 行定义.</p>
+
+</div>
+</div>
+<a id="ae077ac8984c5b05425168b598f4089ca"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae077ac8984c5b05425168b598f4089ca">&#9670;&nbsp;</a></span>dpdk_obj_dequeue</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define dpdk_obj_dequeue</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">queue_ptr, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">obj&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td>&#160;&#160;&#160;rte_ring_dequeue(queue_ptr, obj)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>单个对象入队 </p><dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">queue_ptr</td><td>队列指针 </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">obj</td><td>void**类型，对象指针二维指针 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>成功：0，失败：&lt;0 </dd></dl>
+<dl class="section see"><dt>参见</dt><dd>参考sample相关用例 </dd></dl>
+
+<p class="definition">在文件 <a class="el" href="queue__mng_8h_source.html">queue_mng.h</a> 第 <a class="el" href="queue__mng_8h_source.html#l00055">55</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a1c3858de0ff41a88307e94b03b29f76c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1c3858de0ff41a88307e94b03b29f76c">&#9670;&nbsp;</a></span>dpdk_objs_enqueue</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define dpdk_objs_enqueue</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">queue_ptr, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">obj_table, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">n, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">free_space&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td>&#160;&#160;&#160;rte_ring_enqueue_burst(queue_ptr, obj_table, n, free_space)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>多个对象入队 </p><dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">queue_ptr</td><td>队列指针 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">obj_table</td><td>对象指针数组 void**类型，内存由使用者维护 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">n</td><td>期望入队对象个数 </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">free_space</td><td>可用队列空间，可以为NULL </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>实际入队对象个数 </dd></dl>
+<dl class="section see"><dt>参见</dt><dd>参考sample相关用例 </dd></dl>
+
+<p class="definition">在文件 <a class="el" href="queue__mng_8h_source.html">queue_mng.h</a> 第 <a class="el" href="queue__mng_8h_source.html#l00065">65</a> 行定义.</p>
+
+</div>
+</div>
+<a id="ae240025a418686eec35d94eb140fe289"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae240025a418686eec35d94eb140fe289">&#9670;&nbsp;</a></span>dpdk_objs_dequeue</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define dpdk_objs_dequeue</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">queue_ptr, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">obj_table, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">n, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">available&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td>&#160;&#160;&#160;rte_ring_dequeue_burst(queue_ptr, obj_table, n, available)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>多个对象入队 </p><dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">queue_ptr</td><td>队列指针 </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">obj_table</td><td>对象指针数组 void**类型 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">n</td><td>期望出队对象个数 </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">available</td><td>队列实际还有多少对象，可以为NULL </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>实际出队对象个数 </dd></dl>
+<dl class="section see"><dt>参见</dt><dd>参考sample相关用例 </dd></dl>
+
+<p class="definition">在文件 <a class="el" href="queue__mng_8h_source.html">queue_mng.h</a> 第 <a class="el" href="queue__mng_8h_source.html#l00076">76</a> 行定义.</p>
+
+</div>
+</div>
+<h2 class="groupheader">函数说明</h2>
+<a id="aead081bb49ec84a8cf497f5d27bd41cf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aead081bb49ec84a8cf497f5d27bd41cf">&#9670;&nbsp;</a></span>dpdk_queue_create()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">struct rte_ring* dpdk_queue_create </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>name</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">unsigned&#160;</td>
+          <td class="paramname"><em>count</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>numa_id</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">unsigned&#160;</td>
+          <td class="paramname"><em>flags</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>dpdk队列创建 </p><dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">name</td><td>队列名称，不能重名 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">count</td><td>队列大小 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">numa_id</td><td>要申请的内存在numa_id对应的内存上申请，使用者可以通过get_numaid_by_cpuid获取numa_id 即使用者在对应cpu上操作numa_id上的内存。 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">flags</td><td>0表示多生产多消费； RING_F_SP_ENQ,单生产多消费； RING_F_SC_DEQ,多生产单消费； RING_F_SP_ENQ|RING_F_SC_DEQ 单生产单消费 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>成功：队列指针，失败：NULL </dd></dl>
+<dl class="section warning"><dt>警告</dt><dd>参数不能为空 </dd></dl>
+<dl class="section see"><dt>参见</dt><dd>参考sample相关用例 </dd></dl>
+
+</div>
+</div>
+<a id="a502434b55b2f2e35fc751589046a9867"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a502434b55b2f2e35fc751589046a9867">&#9670;&nbsp;</a></span>dpdk_queue_destroy()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void dpdk_queue_destroy </td>
+          <td>(</td>
+          <td class="paramtype">struct rte_ring *&#160;</td>
+          <td class="paramname"><em>queue_ptr</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>dpdk队列删除 </p><dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">queue_ptr</td><td>队列指针 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section warning"><dt>警告</dt><dd>参数不能为空 </dd></dl>
+<dl class="section see"><dt>参见</dt><dd>参考sample相关用例 </dd></dl>
+
+</div>
+</div>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_f832923ad3cb060bc87ad85e68b8a1c3.html">public</a></li><li class="navelem"><a class="el" href="dir_0fb2101ba02d68f078970216a1fe0334.html">include</a></li><li class="navelem"><a class="el" href="dir_053b8ab4c6d0f736772003381ca40e09.html">libnap</a></li><li class="navelem"><a class="el" href="dir_f06eaa86c340bb0b1483e8bce43df59e.html">libcommunicate_mng</a></li><li class="navelem"><a class="el" href="queue__mng_8h.html">queue_mng.h</a></li>
+    <li class="footer">制作者
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.14 </li>
+  </ul>
+</div>
+</body>
+</html>

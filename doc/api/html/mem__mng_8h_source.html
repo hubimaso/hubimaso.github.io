@@ -1,0 +1,93 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.14"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>mem_mng.h 源文件</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+  $(document).ready(initResizable);
+/* @license-end */</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="NAPLIB.PNG"/></td>
+    <td style="padding-left: 0.5em;">
+    <div id="projectbrief">网络分析平台库</div>
+    </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.8.14 -->
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',false,false,'search.php','搜索');
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(document).ready(function(){initNavTree('mem__mng_8h_source.html','');});
+/* @license-end */
+</script>
+<div id="doc-content">
+<div class="header">
+  <div class="headertitle">
+<div class="title">mem_mng.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="mem__mng_8h.html">浏览该文件的文档.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;</div><div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#ifndef MEM_MNG_H_</span></div><div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#define MEM_MNG_H_</span></div><div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">#ifdef __cplusplus</span></div><div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="keyword">extern</span> <span class="stringliteral">&quot;C&quot;</span> {</div><div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* __cplusplus */</span><span class="preprocessor"></span></div><div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;</div><div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="preprocessor">#include &lt;stdint.h&gt;</span></div><div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="preprocessor">#include &quot;rte_mempool.h&quot;</span></div><div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="preprocessor">#define MEMPOOL_CACHE_SIZE 64</span></div><div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;</div><div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;<span class="keyword">struct </span>rte_mempool * <a class="code" href="mem__mng_8h.html#a3f47e5ffd810e7e5f8b47534175283d6">dpdk_mempool_create</a>(<span class="keyword">const</span> <span class="keywordtype">char</span> *name, <span class="keywordtype">unsigned</span> n, <span class="keywordtype">unsigned</span> elt_size, int32_t numa_id, <span class="keywordtype">unsigned</span> flags);</div><div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;</div><div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;<span class="keyword">struct </span>rte_mempool * <a class="code" href="mem__mng_8h.html#ae3f96dedd2d02960b4405638f647a3e0">dpdk_mempool_create_ext</a>(<span class="keyword">const</span> <span class="keywordtype">char</span> *name, <span class="keywordtype">unsigned</span> n, <span class="keywordtype">unsigned</span> elt_size,\</div><div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    <span class="keywordtype">unsigned</span> cache_size, <span class="keywordtype">unsigned</span> private_data_size,</div><div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    rte_mempool_ctor_t *mp_init, <span class="keywordtype">void</span> *mp_init_arg,</div><div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    rte_mempool_obj_cb_t *obj_init, <span class="keywordtype">void</span> *obj_init_arg,</div><div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    <span class="keywordtype">int</span> socket_id, <span class="keywordtype">unsigned</span> flags);</div><div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;<span class="keywordtype">void</span> <a class="code" href="mem__mng_8h.html#a1b4a9ceb7ec2ea913da2351803f236d2">dpdk_mempool_destroy</a>(<span class="keyword">struct</span> rte_mempool * mempool_ptr);</div><div class="line"><a name="l00057"></a><span class="lineno"><a class="line" href="mem__mng_8h.html#aba6da9eecada385df4441328356162a8">   57</a></span>&#160;<span class="preprocessor">#define dpdk_mempool_get(mempool_ptr, mem_node) rte_mempool_get(mempool_ptr, mem_node)</span></div><div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;</div><div class="line"><a name="l00066"></a><span class="lineno"><a class="line" href="mem__mng_8h.html#a4e61359c80f87a36b29e048b98bead99">   66</a></span>&#160;<span class="preprocessor">#define dpdk_mempool_get_bulk(mempool_ptr, mem_node_table, mem_node_num) \</span></div><div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;<span class="preprocessor">    rte_mempool_get_bulk(mempool_ptr, mem_node_table, mem_node_num)</span></div><div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;</div><div class="line"><a name="l00076"></a><span class="lineno"><a class="line" href="mem__mng_8h.html#a6e12a91f8f6fdf55322c5c925f241dc2">   76</a></span>&#160;<span class="preprocessor">#define dpdk_mempool_put(mempool_ptr, mem_node) rte_mempool_put(mempool_ptr, mem_node)</span></div><div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;</div><div class="line"><a name="l00085"></a><span class="lineno"><a class="line" href="mem__mng_8h.html#a8950d5a03004254f8f8ad5fbe08a0050">   85</a></span>&#160;<span class="preprocessor">#define dpdk_mempool_put_bulk(mempool_ptr, mem_node_table, mem_node_num) \</span></div><div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;<span class="preprocessor">    rte_mempool_put_bulk(mempool_ptr, mem_node_table, mem_node_num)</span></div><div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;</div><div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;<span class="keywordtype">void</span> *<a class="code" href="mem__mng_8h.html#a1ac8d6aa55a9d6481b5416ae09f03c1f">dpdk_malloc</a>(<span class="keyword">const</span> <span class="keywordtype">char</span> *mem_name, <span class="keywordtype">size_t</span> mem_size);</div><div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;</div><div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;<span class="keywordtype">void</span> *<a class="code" href="mem__mng_8h.html#a6d96babcdd4e8e63d2a103e40f4def10">dpdk_calloc</a>(<span class="keyword">const</span> <span class="keywordtype">char</span> *mem_name, <span class="keywordtype">size_t</span> mem_num, <span class="keywordtype">size_t</span> mem_size);</div><div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;</div><div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;<span class="keywordtype">void</span> *<a class="code" href="mem__mng_8h.html#ac03cabe3227ede35b59edd450f70403c">dpdk_realloc</a>(<span class="keywordtype">void</span> *mem_ptr, <span class="keywordtype">size_t</span> mem_size);</div><div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;</div><div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;<span class="keywordtype">void</span> <a class="code" href="mem__mng_8h.html#a68ebdb1a18667a85f3dbba78070ced75">dpdk_free</a>(<span class="keywordtype">void</span> *mem_ptr);</div><div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;</div><div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;<span class="keywordtype">void</span> *<a class="code" href="mem__mng_8h.html#ad0b65ca3965eac003cb7d35cb7e39f24">dpdk_memcpy</a>(<span class="keywordtype">void</span> *dst, <span class="keyword">const</span> <span class="keywordtype">void</span> *src, <span class="keywordtype">size_t</span> n);</div><div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;</div><div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;<span class="keywordtype">void</span> *<a class="code" href="mem__mng_8h.html#a8bdbf58a5fc834d42c1874afd0c56dcf">ngx_slabpool_create</a>(<span class="keyword">const</span> <span class="keywordtype">char</span> *name, uint32_t pool_size, int32_t numa_id, <span class="keywordtype">unsigned</span> flags);</div><div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;</div><div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;<span class="keywordtype">void</span> *<a class="code" href="mem__mng_8h.html#a826cb353089b575cd6c023d38a07d927">ngx_slabpool_get</a>(<span class="keywordtype">void</span> *slab_pool, uint32_t node_size);</div><div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;</div><div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160;<span class="keywordtype">void</span> <a class="code" href="mem__mng_8h.html#a1dd37d0162b8edf72dccc0ce41da4d62">ngx_slabpool_put</a>(<span class="keywordtype">void</span> *slab_pool, <span class="keywordtype">void</span> *mem_node);</div><div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160;</div><div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160;<span class="keywordtype">void</span> <a class="code" href="mem__mng_8h.html#a58e5b39dbd596c133c5871175ee243f1">ngx_slabpool_destroy</a>(<span class="keywordtype">void</span> *slab_pool);</div><div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160;</div><div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160;<span class="preprocessor">#ifdef __cplusplus</span></div><div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160;}</div><div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* __cplusplus */</span><span class="preprocessor"></span></div><div class="line"><a name="l00176"></a><span class="lineno">  176</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* BASELIB_INI_H_ */</span><span class="preprocessor"></span></div><div class="ttc" id="mem__mng_8h_html_ae3f96dedd2d02960b4405638f647a3e0"><div class="ttname"><a href="mem__mng_8h.html#ae3f96dedd2d02960b4405638f647a3e0">dpdk_mempool_create_ext</a></div><div class="ttdeci">struct rte_mempool * dpdk_mempool_create_ext(const char *name, unsigned n, unsigned elt_size, unsigned cache_size, unsigned private_data_size, rte_mempool_ctor_t *mp_init, void *mp_init_arg, rte_mempool_obj_cb_t *obj_init, void *obj_init_arg, int socket_id, unsigned flags)</div></div>
+<div class="ttc" id="mem__mng_8h_html_a1ac8d6aa55a9d6481b5416ae09f03c1f"><div class="ttname"><a href="mem__mng_8h.html#a1ac8d6aa55a9d6481b5416ae09f03c1f">dpdk_malloc</a></div><div class="ttdeci">void * dpdk_malloc(const char *mem_name, size_t mem_size)</div></div>
+<div class="ttc" id="mem__mng_8h_html_ad0b65ca3965eac003cb7d35cb7e39f24"><div class="ttname"><a href="mem__mng_8h.html#ad0b65ca3965eac003cb7d35cb7e39f24">dpdk_memcpy</a></div><div class="ttdeci">void * dpdk_memcpy(void *dst, const void *src, size_t n)</div></div>
+<div class="ttc" id="mem__mng_8h_html_a1b4a9ceb7ec2ea913da2351803f236d2"><div class="ttname"><a href="mem__mng_8h.html#a1b4a9ceb7ec2ea913da2351803f236d2">dpdk_mempool_destroy</a></div><div class="ttdeci">void dpdk_mempool_destroy(struct rte_mempool *mempool_ptr)</div></div>
+<div class="ttc" id="mem__mng_8h_html_a8bdbf58a5fc834d42c1874afd0c56dcf"><div class="ttname"><a href="mem__mng_8h.html#a8bdbf58a5fc834d42c1874afd0c56dcf">ngx_slabpool_create</a></div><div class="ttdeci">void * ngx_slabpool_create(const char *name, uint32_t pool_size, int32_t numa_id, unsigned flags)</div></div>
+<div class="ttc" id="mem__mng_8h_html_a58e5b39dbd596c133c5871175ee243f1"><div class="ttname"><a href="mem__mng_8h.html#a58e5b39dbd596c133c5871175ee243f1">ngx_slabpool_destroy</a></div><div class="ttdeci">void ngx_slabpool_destroy(void *slab_pool)</div></div>
+<div class="ttc" id="mem__mng_8h_html_a3f47e5ffd810e7e5f8b47534175283d6"><div class="ttname"><a href="mem__mng_8h.html#a3f47e5ffd810e7e5f8b47534175283d6">dpdk_mempool_create</a></div><div class="ttdeci">struct rte_mempool * dpdk_mempool_create(const char *name, unsigned n, unsigned elt_size, int32_t numa_id, unsigned flags)</div></div>
+<div class="ttc" id="mem__mng_8h_html_a6d96babcdd4e8e63d2a103e40f4def10"><div class="ttname"><a href="mem__mng_8h.html#a6d96babcdd4e8e63d2a103e40f4def10">dpdk_calloc</a></div><div class="ttdeci">void * dpdk_calloc(const char *mem_name, size_t mem_num, size_t mem_size)</div></div>
+<div class="ttc" id="mem__mng_8h_html_ac03cabe3227ede35b59edd450f70403c"><div class="ttname"><a href="mem__mng_8h.html#ac03cabe3227ede35b59edd450f70403c">dpdk_realloc</a></div><div class="ttdeci">void * dpdk_realloc(void *mem_ptr, size_t mem_size)</div></div>
+<div class="ttc" id="mem__mng_8h_html_a826cb353089b575cd6c023d38a07d927"><div class="ttname"><a href="mem__mng_8h.html#a826cb353089b575cd6c023d38a07d927">ngx_slabpool_get</a></div><div class="ttdeci">void * ngx_slabpool_get(void *slab_pool, uint32_t node_size)</div></div>
+<div class="ttc" id="mem__mng_8h_html_a68ebdb1a18667a85f3dbba78070ced75"><div class="ttname"><a href="mem__mng_8h.html#a68ebdb1a18667a85f3dbba78070ced75">dpdk_free</a></div><div class="ttdeci">void dpdk_free(void *mem_ptr)</div></div>
+<div class="ttc" id="mem__mng_8h_html_a1dd37d0162b8edf72dccc0ce41da4d62"><div class="ttname"><a href="mem__mng_8h.html#a1dd37d0162b8edf72dccc0ce41da4d62">ngx_slabpool_put</a></div><div class="ttdeci">void ngx_slabpool_put(void *slab_pool, void *mem_node)</div></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_f832923ad3cb060bc87ad85e68b8a1c3.html">public</a></li><li class="navelem"><a class="el" href="dir_0fb2101ba02d68f078970216a1fe0334.html">include</a></li><li class="navelem"><a class="el" href="dir_053b8ab4c6d0f736772003381ca40e09.html">libnap</a></li><li class="navelem"><a class="el" href="dir_938ecd2357064ede2222dabeb226d063.html">libmem_mng</a></li><li class="navelem"><a class="el" href="mem__mng_8h.html">mem_mng.h</a></li>
+    <li class="footer">制作者
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.14 </li>
+  </ul>
+</div>
+</body>
+</html>
