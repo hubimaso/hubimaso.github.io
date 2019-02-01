@@ -19,7 +19,7 @@
 
 # -- Project information -----------------------------------------------------
 
-project = u'High-performance C/C++ libraries(高性能C/C++库)'
+project = u'Linux高性能C/C++平台库及框架'
 copyright = u'2018, hubimaso'
 author = u'hubimaso'
 
@@ -42,7 +42,7 @@ extensions = [
 ]
 
 # Add any paths that contain templates here, relative to this directory.
-templates_path = ['_templates']
+templates_path = ['ytemplates']
 
 # The suffix(es) of source filenames.
 # You can specify multiple suffix as a list of string:
@@ -74,9 +74,7 @@ pygments_style = None
 # The theme to use for HTML and HTML Help pages.  See the documentation for
 # a list of builtin themes.
 #
-import sphinx_rtd_theme
 html_theme = 'sphinx_rtd_theme'
-html_theme_path = [sphinx_rtd_theme.get_html_theme_path()]
 
 # Theme options are theme-specific and customize the look and feel of a theme
 # further.  For a list of options available for each theme, see the
@@ -87,7 +85,7 @@ html_theme_path = [sphinx_rtd_theme.get_html_theme_path()]
 # Add any paths that contain custom static files (such as style sheets) here,
 # relative to this directory. They are copied after the builtin static files,
 # so a file named "default.css" will overwrite the builtin "default.css".
-html_static_path = ['_static']
+html_static_path = ['ystatic']
 
 # Custom sidebar templates, must be a dictionary that maps document names
 # to template names.
@@ -103,7 +101,7 @@ html_static_path = ['_static']
 # -- Options for HTMLHelp output ---------------------------------------------
 
 # Output file base name for HTML help builder.
-htmlhelp_basename = 'High-performanceCClibrariesCCdoc'
+htmlhelp_basename = 'LinuxCCdoc'
 
 
 # -- Options for LaTeX output ------------------------------------------------
@@ -130,7 +128,7 @@ latex_elements = {
 # (source start file, target name, title,
 #  author, documentclass [howto, manual, or own class]).
 latex_documents = [
-    (master_doc, 'High-performanceCClibrariesCC.tex', u'High-performance C/C++ libraries(高性能C/C++库) Documentation',
+    (master_doc, 'LinuxCC.tex', u'Linux高性能C/C++平台库及框架 Documentation',
      u'hubimaso', 'manual'),
 ]
 
@@ -140,7 +138,7 @@ latex_documents = [
 # One entry per manual page. List of tuples
 # (source start file, name, description, authors, manual section).
 man_pages = [
-    (master_doc, 'high-performancecclibrariescc', u'High-performance C/C++ libraries(高性能C/C++库) Documentation',
+    (master_doc, 'linuxcc', u'Linux高性能C/C++平台库及框架 Documentation',
      [author], 1)
 ]
 
@@ -151,8 +149,8 @@ man_pages = [
 # (source start file, target name, title, author,
 #  dir menu entry, description, category)
 texinfo_documents = [
-    (master_doc, 'High-performanceCClibrariesCC', u'High-performance C/C++ libraries(高性能C/C++库) Documentation',
-     author, 'High-performanceCClibrariesCC', 'One line description of project.',
+    (master_doc, 'LinuxCC', u'Linux高性能C/C++平台库及框架 Documentation',
+     author, 'LinuxCC', 'One line description of project.',
      'Miscellaneous'),
 ]
 
